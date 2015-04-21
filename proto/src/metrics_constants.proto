@@ -6124,6 +6124,7 @@ message MetricsEvent {
       RAINBOW_UNICORN = 2000;
       CAFFEINE_TILE = 2001;
       TILE_USB_TETHER = 2002;
+      TILE_HEADS_UP = 2003;
 
     //END XPerience Constants
 
