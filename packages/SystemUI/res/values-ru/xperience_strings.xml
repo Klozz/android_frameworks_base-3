@@ -19,4 +19,5 @@
 
     <string name="global_action_restart_advanced">Расшир. перезагрузка</string>
 
+    <string name="statusbar_items_title">Редактирование иконок</string>
 </resources>
