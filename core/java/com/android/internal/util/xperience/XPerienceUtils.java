@@ -24,6 +24,8 @@ import android.os.PowerManager;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.SystemClock;
+import android.view.IWindowManager;
+import android.view.WindowManagerGlobal;
 import android.view.InputDevice;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
@@ -34,6 +36,9 @@ import com.android.internal.statusbar.IStatusBarService;
  * Some custom utilities
  */
 public class XPerienceUtils {
+
+  public static final String INTENT_SCREENSHOT = "action_handler_screenshot";
+  public static final String INTENT_REGION_SCREENSHOT = "action_handler_region_screenshot";
 
     public static void switchScreenOff(Context ctx) {
         PowerManager pm = (PowerManager) ctx.getSystemService(Context.POWER_SERVICE);
@@ -72,6 +77,15 @@ public class XPerienceUtils {
                         InputManager.INJECT_INPUT_EVENT_MODE_ASYNC);
             }
         }, 20);
+    }
+
+    public static void takeScreenshot(boolean full) {
+        IWindowManager wm = WindowManagerGlobal.getWindowManagerService();
+        try {
+            wm.sendCustomAction(new Intent(full? INTENT_SCREENSHOT : INTENT_REGION_SCREENSHOT));
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
     }
 
     private static final class FireActions {
