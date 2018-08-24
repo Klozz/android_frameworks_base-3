@@ -72,7 +72,7 @@ public class CaffeineTile extends QSTileImpl<BooleanState> {
     }
 
     @Override
-    public void setListening(boolean listening) {
+    public void handleSetListening(boolean listening) {
     }
 
     @Override
@@ -133,84 +133,84 @@ public class CaffeineTile extends QSTileImpl<BooleanState> {
     }
 
     private void startCountDown(long duration) {
-        stopCountDown();
-        mSecondsRemaining = (int)duration;
-        if (duration == -1) {
-            // infinity timing, no need to start timer
-            return;
-        }
-        mCountdownTimer = new CountDownTimer(duration * 1000, 1000) {
-            @Override
-            public void onTick(long millisUntilFinished) {
-                mSecondsRemaining = (int) (millisUntilFinished / 1000);
-                refreshState();
-            }
+         stopCountDown();
+         mSecondsRemaining = (int)duration;
+         if (duration == -1) {
+             // infinity timing, no need to start timer
+             return;
+         }
+         mCountdownTimer = new CountDownTimer(duration * 1000, 1000) {
+             @Override
+             public void onTick(long millisUntilFinished) {
+                 mSecondsRemaining = (int) (millisUntilFinished / 1000);
+                 refreshState();
+             }
 
-            @Override
-            public void onFinish() {
-                if (mWakeLock.isHeld())
-                    mWakeLock.release();
-                refreshState();
-            }
+             @Override
+             public void onFinish() {
+                 if (mWakeLock.isHeld())
+                     mWakeLock.release();
+                 refreshState();
+             }
 
-        }.start();
-    }
+         }.start();
+     }
 
-    private void stopCountDown() {
-        if (mCountdownTimer != null) {
-            mCountdownTimer.cancel();
-            mCountdownTimer = null;
-        }
-    }
+     private void stopCountDown() {
+         if (mCountdownTimer != null) {
+             mCountdownTimer.cancel();
+             mCountdownTimer = null;
+         }
+     }
 
-    private String formatValueWithRemainingTime() {
-        if (mSecondsRemaining == -1) {
-            return "\u221E"; // infinity
-        }
-        return String.format("%02d:%02d",
-                        mSecondsRemaining / 60 % 60, mSecondsRemaining % 60);
-    }
+     private String formatValueWithRemainingTime() {
+         if (mSecondsRemaining == -1) {
+             return "\u221E"; // infinity
+         }
+         return String.format("%02d:%02d",
+                         mSecondsRemaining / 60 % 60, mSecondsRemaining % 60);
+     }
 
-    @Override
-    protected void handleUpdateState(BooleanState state, Object arg) {
-        state.value = mWakeLock.isHeld();
-        if (state.value) {
-            state.label = formatValueWithRemainingTime();
-            state.icon = ResourceIcon.get(R.drawable.ic_qs_caffeine_on);
-            state.contentDescription =  mContext.getString(
-                    R.string.accessibility_quick_settings_caffeine_on);
-            state.state = Tile.STATE_ACTIVE;
-        } else {
-            state.label = mContext.getString(R.string.quick_settings_caffeine_label);
-            state.icon = ResourceIcon.get(R.drawable.ic_qs_caffeine_off);
-            state.contentDescription =  mContext.getString(
-                    R.string.accessibility_quick_settings_caffeine_off);
-            state.state = Tile.STATE_INACTIVE;
-        }
-    }
+     @Override
+     protected void handleUpdateState(BooleanState state, Object arg) {
+         state.value = mWakeLock.isHeld();
+         if (state.value) {
+             state.label = formatValueWithRemainingTime();
+             state.icon = ResourceIcon.get(R.drawable.ic_qs_caffeine_on);
+             state.contentDescription =  mContext.getString(
+                     R.string.accessibility_quick_settings_caffeine_on);
+             state.state = Tile.STATE_ACTIVE;
+         } else {
+             state.label = mContext.getString(R.string.quick_settings_caffeine_label);
+             state.icon = ResourceIcon.get(R.drawable.ic_qs_caffeine_off);
+             state.contentDescription =  mContext.getString(
+                     R.string.accessibility_quick_settings_caffeine_off);
+             state.state = Tile.STATE_INACTIVE;
+         }
+     }
 
-    private final class Receiver extends BroadcastReceiver {
-        public void init() {
-            // Register for Intent broadcasts for...
-            IntentFilter filter = new IntentFilter();
-            filter.addAction(Intent.ACTION_SCREEN_OFF);
-            mContext.registerReceiver(this, filter, null, mHandler);
-        }
+     private final class Receiver extends BroadcastReceiver {
+         public void init() {
+             // Register for Intent broadcasts for...
+             IntentFilter filter = new IntentFilter();
+             filter.addAction(Intent.ACTION_SCREEN_OFF);
+             mContext.registerReceiver(this, filter, null, mHandler);
+         }
 
-        public void destroy() {
-            mContext.unregisterReceiver(this);
-        }
+         public void destroy() {
+             mContext.unregisterReceiver(this);
+         }
 
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            String action = intent.getAction();
-            if (Intent.ACTION_SCREEN_OFF.equals(action)) {
-                // disable caffeine if user force off (power button)
-                stopCountDown();
-                if (mWakeLock.isHeld())
-                    mWakeLock.release();
-                refreshState();
-            }
-        }
-    }
-}
+         @Override
+         public void onReceive(Context context, Intent intent) {
+             String action = intent.getAction();
+             if (Intent.ACTION_SCREEN_OFF.equals(action)) {
+                 // disable caffeine if user force off (power button)
+                 stopCountDown();
+                 if (mWakeLock.isHeld())
+                     mWakeLock.release();
+                 refreshState();
+             }
+         }
+     }
+ }
