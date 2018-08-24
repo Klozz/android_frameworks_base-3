@@ -19,7 +19,9 @@
 
      <string name="global_action_restart_advanced">Advanced reboot</string>
 
-	 <!--Tiles-->
+    <string name="statusbar_items_title">Statusbar icon</string>
+
+    <!--Tiles-->
     <!-- Caffeine QS tile -->
     <string name="quick_settings_caffeine_label">Caffeine</string>
     <string name="accessibility_quick_settings_caffeine_off">Caffeine off.</string>
