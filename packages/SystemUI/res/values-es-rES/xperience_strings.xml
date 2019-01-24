@@ -65,5 +65,5 @@
     <string name="nav_bar_layout_inverse">Diseño invertido</string>
     <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">Píxeles inteligentes</string>
-    <string name="quick_settings_smart_pixels_on_power_save">Habilitar automáticamente Smart Pixels</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Habilitar píxeles inteligentes automáticamente</string>
 </resources>
