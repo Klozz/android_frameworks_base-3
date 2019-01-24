@@ -18,10 +18,21 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Advanced powermenu -->
+    <string name="global_action_restart_advanced">Reinicio avanzado</string>
+    <string name="global_action_restart_system">Reiniciar</string>
+    <string name="global_action_restart_recovery">Recovery</string>
+    <string name="global_action_restart_bootloader">Bootloader</string>
+    <string name="global_action_restart_ui">Interfaz de Usuario</string>
+    <string name="statusbar_items_title">Icono de barra de estado</string>
     <!--Tiles-->
     <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Cafeína</string>
+    <string name="accessibility_quick_settings_caffeine_off">Cafeína desactivada.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Cafeína activada.</string>
     <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Anclaje de red por USB</string>
     <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Notificaciones emergentes</string>
     <!-- HW Keys Tile -->
     <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
     <!-- Indication on the keyguard that is shown when the device is charging with a turbo power charger. Should match keyguard_plugged_in_turbo_power_charging [CHAR LIMIT=40]-->
