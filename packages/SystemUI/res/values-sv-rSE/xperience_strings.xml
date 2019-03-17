@@ -18,16 +18,21 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Advanced powermenu -->
-    <!--Tiles-->
-    <!-- Caffeine QS tile -->
-    <!-- USB tethering QS tile -->
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <!--Free Mem Bar-->
     <!-- Heads up QS tile -->
     <!-- HW Keys Tile -->
     <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
     <!-- Indication on the keyguard that is shown when the device is charging with a turbo power charger. Should match keyguard_plugged_in_turbo_power_charging [CHAR LIMIT=40]-->
-    <!-- Omni Weather -->
-    <!-- Screen pinning dialog description. (for devices without navbar) -->
     <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
-    <!-- Button that controls inversion of layout of navigation bar -->
+    <!-- Omni Weather -->
+    <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
+    <!-- OnTheSpot: Action confirmation button text. [CHAR LIMIT=NONE] -->
+    <!-- OnTheSpot: Quick Settings quick pull-down feature description message. [CHAR LIMIT=NONE] -->
+    <!-- OnTheSpot: Title of the Quick Settings quick pull-down feature for the reset dialog. [CHAR LIMIT=NONE] -->
+    <!-- Screen pinning dialog description. (for devices without navbar) -->
     <!-- Smart Pixels QS Tile -->
+    <!--Tiles-->
+    <!-- Caffeine QS tile -->
+    <!-- USB tethering QS tile -->
 </resources>
