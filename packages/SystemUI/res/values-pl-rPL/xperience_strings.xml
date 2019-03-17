@@ -24,13 +24,9 @@
     <string name="global_action_restart_bootloader">Bootloader</string>
     <string name="global_action_restart_ui">SystemUI</string>
     <string name="statusbar_items_title">Ikona paska stanu</string>
-    <!--Tiles-->
-    <!-- Caffeine QS tile -->
-    <string name="quick_settings_caffeine_label">Kofeina</string>
-    <string name="accessibility_quick_settings_caffeine_off">Kofeina wył.</string>
-    <string name="accessibility_quick_settings_caffeine_on">Kofeina wł.</string>
-    <!-- USB tethering QS tile -->
-    <string name="quick_settings_usb_tether_label">Tethering USB</string>
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <string name="nav_bar_layout_inverse">Odwróć układ</string>
+    <!--Free Mem Bar-->
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">Wyskakujące powiadomienia</string>
     <string name="accessibility_quick_settings_heads_up_off">Wyskakujące powiadomienia wył.</string>
@@ -47,6 +43,8 @@
     <!-- Indication on the keyguard that is shown when the device is charging with a turbo power charger. Should match keyguard_plugged_in_turbo_power_charging [CHAR LIMIT=40]-->
     <string name="keyguard_indication_turbo_power_time">TurboPower podłączony (<xliff:g id="charging_time_left">%s</xliff:g> do pełnego naładowania)</string>
     <string name="keyguard_plugged_in_turbo_power_charging">TurboPower podłączony</string>
+    <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
+    <string name="screen_pinning_toast_no_navbar">Aby odpiąć ten ekran, naciśnij &amp; przytrzymaj Wstecz</string>
     <!-- Omni Weather -->
     <string name="omnijaws_service_error">Błąd</string>
     <string name="omnijaws_service_unkown">Brak danych pogodowych</string>
@@ -57,13 +55,20 @@
     <string name="omnijaws_current_text">Teraz</string>
     <string name="omnijaws_package_not_available">OmniJaws nie jest dostępny</string>
     <string name="omnijaws_service_last_update">Ostatnia aktualizacja:</string>
+    <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
+    <!-- OnTheSpot: Action confirmation button text. [CHAR LIMIT=NONE] -->
+    <!-- OnTheSpot: Quick Settings quick pull-down feature description message. [CHAR LIMIT=NONE] -->
+    <!-- OnTheSpot: Title of the Quick Settings quick pull-down feature for the reset dialog. [CHAR LIMIT=NONE] -->
     <!-- Screen pinning dialog description. (for devices without navbar) -->
     <string name="screen_pinning_description_no_navbar">Ekran będzie widoczny, dopóki go nie odepniesz. Dotknij &amp; przytrzymaj Wstecz aby odpiąć.</string>
-    <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
-    <string name="screen_pinning_toast_no_navbar">Aby odpiąć ten ekran, naciśnij &amp; przytrzymaj Wstecz</string>
-    <!-- Button that controls inversion of layout of navigation bar -->
-    <string name="nav_bar_layout_inverse">Odwróć układ</string>
     <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">Inteligentne piksele</string>
     <string name="quick_settings_smart_pixels_on_power_save">Automatyczne włączanie Inteligentnych pikseli</string>
+    <!--Tiles-->
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Kofeina</string>
+    <string name="accessibility_quick_settings_caffeine_off">Kofeina wył.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Kofeina wł.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Tethering USB</string>
 </resources>
