@@ -27,6 +27,7 @@
     <!-- Button that controls inversion of layout of navigation bar -->
     <string name="nav_bar_layout_inverse">Diseño invertido</string>
     <!--Free Mem Bar-->
+    <string name="recents_free_ram"> Memoria RAM libre: %1$d MB </string>
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">Notificaciones emergentes</string>
     <string name="accessibility_quick_settings_heads_up_off">Notificaciones emergentes desactivadas.</string>
@@ -56,9 +57,14 @@
     <string name="omnijaws_package_not_available">OmniJaws no está disponible</string>
     <string name="omnijaws_service_last_update">Última actualización:</string>
     <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
+    <string name="on_the_spot_deny">NO, GRACIAS</string>
     <!-- OnTheSpot: Action confirmation button text. [CHAR LIMIT=NONE] -->
+    <string name="on_the_spot_confirm">DE ACUERDO</string>
     <!-- OnTheSpot: Quick Settings quick pull-down feature description message. [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_quick_pull_down">¿Te gustaría que al deslizar en la parte derecha de la barra de estado se abriese rápidamente el panel de Ajustes Rápidos?</string>
     <!-- OnTheSpot: Title of the Quick Settings quick pull-down feature for the reset dialog. [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_quick_pull_down_name">Deslizamiento rápido de barra de estado</string>
+    <string name="quick_settings_quick_pull_down_summary">Expande automáticamente los Ajustes Rápidos al deslizar desde la parte derecha de la pantalla</string>
     <!-- Screen pinning dialog description. (for devices without navbar) -->
     <string name="screen_pinning_description_no_navbar">Esto fija la pantalla en esta vista hasta que es liberada. Pulsa y Mantén presionado el para liberarla.</string>
     <!-- Smart Pixels QS Tile -->
