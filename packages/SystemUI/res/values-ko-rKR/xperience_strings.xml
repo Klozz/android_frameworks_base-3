@@ -18,21 +18,57 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Advanced powermenu -->
+    <string name="global_action_restart_advanced">재시작 옵션</string>
+    <string name="global_action_restart_system">재부팅</string>
+    <string name="global_action_restart_recovery">리커버리</string>
+    <string name="global_action_restart_bootloader">부트로더</string>
+    <string name="global_action_restart_ui">시스템 Ui</string>
+    <string name="statusbar_items_title">상태 표시줄 항목</string>
     <!-- Button that controls inversion of layout of navigation bar -->
+    <string name="nav_bar_layout_inverse">레이아웃 반전</string>
     <!--Free Mem Bar-->
     <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">헤드 업</string>
+    <string name="accessibility_quick_settings_heads_up_off">피킹 알람 끔.</string>
+    <string name="accessibility_quick_settings_heads_up_on">헤드업 알림이 켜짐.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">헤드 업 알림 꺼짐</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">헤드 업 켜짐.</string>
     <!-- HW Keys Tile -->
+    <string name="accessibility_quick_settings_hwkeys_on">하드웨어 키 사용</string>
+    <string name="accessibility_quick_settings_hwkeys_off">하드웨어 키 사용 안함</string>
+    <string name="quick_settings_hwkeys_label">하드웨어 키</string>
     <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time">고속 충전중 (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> 후에 충전 완료)</string>
+    <string name="keyguard_plugged_in_dash_charging">Dash 충전 중</string>
     <!-- Indication on the keyguard that is shown when the device is charging with a turbo power charger. Should match keyguard_plugged_in_turbo_power_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_turbo_power_time">TurboPower 연결됨 (풀 충전까지 <xliff:g id="charging_time_left">%s</xliff:g> 남음)</string>
+    <string name="keyguard_plugged_in_turbo_power_charging">TurboPower 연결됨</string>
     <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
+    <string name="screen_pinning_toast_no_navbar">이 화면의 고정을 해제하려면 뒤의 &amp; 버튼을 길게 누릅니다.</string>
     <!-- Omni Weather -->
+    <string name="omnijaws_service_error">에러</string>
+    <string name="omnijaws_service_unkown">날씨 데이터 없음</string>
+    <string name="omnijaws_service_error_long">날씨 정보 불러오기 오류</string>
+    <string name="omnijaws_service_disabled">서비스 사용 중지됨</string>
+    <string name="omnijaws_detail_header">날씨</string>
+    <string name="omnijaws_label_default">날씨</string>
+    <string name="omnijaws_current_text">지금</string>
+    <string name="omnijaws_package_not_available">OmniJaws를 사용할 수 없음</string>
+    <string name="omnijaws_service_last_update">마지막 업데이트:</string>
     <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
     <!-- OnTheSpot: Action confirmation button text. [CHAR LIMIT=NONE] -->
     <!-- OnTheSpot: Quick Settings quick pull-down feature description message. [CHAR LIMIT=NONE] -->
     <!-- OnTheSpot: Title of the Quick Settings quick pull-down feature for the reset dialog. [CHAR LIMIT=NONE] -->
     <!-- Screen pinning dialog description. (for devices without navbar) -->
+    <string name="screen_pinning_description_no_navbar">고정을 해제하기 전까지 계속 볼 수 있습니다. 고정을 해제하려면 뒤로 가기 버튼을 길게 누르세요.</string>
     <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">스마트 픽셀</string>
+    <string name="quick_settings_smart_pixels_on_power_save">자동 가능 스마트 픽셀</string>
     <!--Tiles-->
     <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">카페인</string>
+    <string name="accessibility_quick_settings_caffeine_off">카페인 꺼짐.</string>
+    <string name="accessibility_quick_settings_caffeine_on">카페인 켜짐.</string>
     <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB 테더링</string>
 </resources>
