@@ -24,13 +24,9 @@
     <string name="global_action_restart_bootloader">Bootloader</string>
     <string name="global_action_restart_ui">Interfaz de Usuario</string>
     <string name="statusbar_items_title">Icono de barra de estado</string>
-    <!--Tiles-->
-    <!-- Caffeine QS tile -->
-    <string name="quick_settings_caffeine_label">Cafeína</string>
-    <string name="accessibility_quick_settings_caffeine_off">Cafeína desactivada.</string>
-    <string name="accessibility_quick_settings_caffeine_on">Cafeína activada.</string>
-    <!-- USB tethering QS tile -->
-    <string name="quick_settings_usb_tether_label">Anclaje de red por USB</string>
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <string name="nav_bar_layout_inverse">Diseño invertido</string>
+    <!--Free Mem Bar-->
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">Notificaciones emergentes</string>
     <string name="accessibility_quick_settings_heads_up_off">Notificaciones emergentes desactivadas.</string>
@@ -47,6 +43,8 @@
     <!-- Indication on the keyguard that is shown when the device is charging with a turbo power charger. Should match keyguard_plugged_in_turbo_power_charging [CHAR LIMIT=40]-->
     <string name="keyguard_indication_turbo_power_time">TurboPower conectado (<xliff:g id="charging_time_left">%s</xliff:g> hasta completar)</string>
     <string name="keyguard_plugged_in_turbo_power_charging">TurboPower conectado</string>
+    <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
+    <string name="screen_pinning_toast_no_navbar">Para anular la fijación, mantenga presionado el botón de atrás</string>
     <!-- Omni Weather -->
     <string name="omnijaws_service_error">Error</string>
     <string name="omnijaws_service_unkown">No hay datos metereológicos</string>
@@ -57,13 +55,20 @@
     <string name="omnijaws_current_text">Ahora</string>
     <string name="omnijaws_package_not_available">OmniJaws no está disponible</string>
     <string name="omnijaws_service_last_update">Última actualización:</string>
+    <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
+    <!-- OnTheSpot: Action confirmation button text. [CHAR LIMIT=NONE] -->
+    <!-- OnTheSpot: Quick Settings quick pull-down feature description message. [CHAR LIMIT=NONE] -->
+    <!-- OnTheSpot: Title of the Quick Settings quick pull-down feature for the reset dialog. [CHAR LIMIT=NONE] -->
     <!-- Screen pinning dialog description. (for devices without navbar) -->
     <string name="screen_pinning_description_no_navbar">Esto fija la pantalla en esta vista hasta que es liberada. Pulsa y Mantén presionado el para liberarla.</string>
-    <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
-    <string name="screen_pinning_toast_no_navbar">Para anular la fijación, mantenga presionado el botón de atrás</string>
-    <!-- Button that controls inversion of layout of navigation bar -->
-    <string name="nav_bar_layout_inverse">Diseño invertido</string>
     <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">Píxeles inteligentes</string>
     <string name="quick_settings_smart_pixels_on_power_save">Habilitar píxeles inteligentes automáticamente</string>
+    <!--Tiles-->
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Cafeína</string>
+    <string name="accessibility_quick_settings_caffeine_off">Cafeína desactivada.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Cafeína activada.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Anclaje de red por USB</string>
 </resources>
