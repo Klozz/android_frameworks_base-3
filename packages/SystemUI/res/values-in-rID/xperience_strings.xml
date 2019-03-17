@@ -24,13 +24,9 @@
     <string name="global_action_restart_bootloader">Bootloader</string>
     <string name="global_action_restart_ui">SystemUI</string>
     <string name="statusbar_items_title">Ikon Statusbar</string>
-    <!--Tiles-->
-    <!-- Caffeine QS tile -->
-    <string name="quick_settings_caffeine_label">Caffeine</string>
-    <string name="accessibility_quick_settings_caffeine_off">Caffeine off.</string>
-    <string name="accessibility_quick_settings_caffeine_on">Caffeine on.</string>
-    <!-- USB tethering QS tile -->
-    <string name="quick_settings_usb_tether_label">USB tethering</string>
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <string name="nav_bar_layout_inverse">Invert layout</string>
+    <!--Free Mem Bar-->
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">Notifikasi mengambang</string>
     <string name="accessibility_quick_settings_heads_up_off">Notifikasi mengambang mati.</string>
@@ -47,6 +43,8 @@
     <!-- Indication on the keyguard that is shown when the device is charging with a turbo power charger. Should match keyguard_plugged_in_turbo_power_charging [CHAR LIMIT=40]-->
     <string name="keyguard_indication_turbo_power_time">TurboPower terhubung (<xliff:g id="charging_time_left">%s</xliff:g> sampai penuh)</string>
     <string name="keyguard_plugged_in_turbo_power_charging">TurboPower terhubung</string>
+    <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
+    <string name="screen_pinning_toast_no_navbar">Untuk melepaskan sematan layar, sentuh &amp; tahan tombol Kembali</string>
     <!-- Omni Weather -->
     <string name="omnijaws_service_error">Galat</string>
     <string name="omnijaws_service_unkown">Tidak ada data cuaca</string>
@@ -57,13 +55,20 @@
     <string name="omnijaws_current_text">Sekarang</string>
     <string name="omnijaws_package_not_available">OmniJaws tidak tersedia</string>
     <string name="omnijaws_service_last_update">Pembaharuan Terakhir:</string>
+    <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
+    <!-- OnTheSpot: Action confirmation button text. [CHAR LIMIT=NONE] -->
+    <!-- OnTheSpot: Quick Settings quick pull-down feature description message. [CHAR LIMIT=NONE] -->
+    <!-- OnTheSpot: Title of the Quick Settings quick pull-down feature for the reset dialog. [CHAR LIMIT=NONE] -->
     <!-- Screen pinning dialog description. (for devices without navbar) -->
     <string name="screen_pinning_description_no_navbar">Ini membuatnya tetap terlihat sampai Anda melepaskan sematan. Sentuh &amp; amp; tahan tombol Kembali untuk melepaskan sematan.</string>
-    <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
-    <string name="screen_pinning_toast_no_navbar">Untuk melepaskan sematan layar, sentuh &amp; tahan tombol Kembali</string>
-    <!-- Button that controls inversion of layout of navigation bar -->
-    <string name="nav_bar_layout_inverse">Invert layout</string>
     <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">Smart Pixels</string>
     <string name="quick_settings_smart_pixels_on_power_save">Smart Pixels diaktifkan otomatis</string>
+    <!--Tiles-->
+    <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Caffeine</string>
+    <string name="accessibility_quick_settings_caffeine_off">Caffeine off.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Caffeine on.</string>
+    <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB tethering</string>
 </resources>
