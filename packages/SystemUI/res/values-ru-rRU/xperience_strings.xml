@@ -27,6 +27,7 @@
     <!-- Button that controls inversion of layout of navigation bar -->
     <string name="nav_bar_layout_inverse">Инвертировать порядок кнопок</string>
     <!--Free Mem Bar-->
+    <string name="recents_free_ram"> Свободно ОЗУ: %1$d Мб </string>
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">Всплывающие уведомления</string>
     <string name="accessibility_quick_settings_heads_up_off">Всплывающие уведомления выкл.</string>
@@ -43,6 +44,7 @@
     <!-- Indication on the keyguard that is shown when the device is charging with a turbo power charger. Should match keyguard_plugged_in_turbo_power_charging [CHAR LIMIT=40]-->
     <string name="keyguard_indication_turbo_power_time">Быстрая зарядка активна (<xliff:g id="charging_time_left">%s</xliff:g> до полной зарядки)</string>
     <string name="keyguard_plugged_in_turbo_power_charging">Быстрая зарядка подключена</string>
+    <!-- Moto mods -->
     <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
     <string name="screen_pinning_toast_no_navbar">Чтобы открепить экран, нажмите &amp; удерживайте кнопку «Назад»</string>
     <!-- Omni Weather -->
@@ -56,9 +58,14 @@
     <string name="omnijaws_package_not_available">OmniJaws недоступен</string>
     <string name="omnijaws_service_last_update">Последнее обновление:</string>
     <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
+    <string name="on_the_spot_deny">НЕТ, СПАСИБО</string>
     <!-- OnTheSpot: Action confirmation button text. [CHAR LIMIT=NONE] -->
+    <string name="on_the_spot_confirm">ХОРОШО</string>
     <!-- OnTheSpot: Quick Settings quick pull-down feature description message. [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_quick_pull_down">Хотите, чтобы с правого края строки уведомлений можно было вызвать панель быстрых настроек?</string>
     <!-- OnTheSpot: Title of the Quick Settings quick pull-down feature for the reset dialog. [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_quick_pull_down_name">Быстрый доступ к панели быстрых настроек</string>
+    <string name="quick_settings_quick_pull_down_summary">Автоматически открывать панель быстрых настроек при вытягивании с боковой стороны экрана</string>
     <!-- Screen pinning dialog description. (for devices without navbar) -->
     <string name="screen_pinning_description_no_navbar">Это будет активным до открепления. Нажите &amp; держите «Назад» для открепления.</string>
     <!-- Smart Pixels QS Tile -->
