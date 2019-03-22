@@ -45,6 +45,9 @@
     <string name="keyguard_indication_turbo_power_time">TurboPower conectado (<xliff:g id="charging_time_left">%s</xliff:g> hasta completar)</string>
     <string name="keyguard_plugged_in_turbo_power_charging">TurboPower conectado</string>
     <!-- Moto mods -->
+    <string name="mod_battery_format">Moto Mod %1$d%%</string>
+    <string name="mod_info_status_charging_phone">Cargando Teléfono</string>
+    <string name="mod_info_status_not_charging">No se está cargando</string>
     <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
     <string name="screen_pinning_toast_no_navbar">Para anular la fijación, mantenga presionado el botón de atrás</string>
     <!-- Omni Weather -->
