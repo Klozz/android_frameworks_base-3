@@ -45,6 +45,9 @@
     <string name="keyguard_indication_turbo_power_time">Быстрая зарядка активна (<xliff:g id="charging_time_left">%s</xliff:g> до полной зарядки)</string>
     <string name="keyguard_plugged_in_turbo_power_charging">Быстрая зарядка подключена</string>
     <!-- Moto mods -->
+    <string name="mod_battery_format">Moto Mod %1$d%%</string>
+    <string name="mod_info_status_charging_phone">Телефон заряжается</string>
+    <string name="mod_info_status_not_charging">Не заряжается</string>
     <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
     <string name="screen_pinning_toast_no_navbar">Чтобы открепить экран, нажмите &amp; удерживайте кнопку «Назад»</string>
     <!-- Omni Weather -->
