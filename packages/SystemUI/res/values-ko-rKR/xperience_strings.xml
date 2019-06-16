@@ -46,16 +46,6 @@
     <!-- Moto mods -->
     <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
     <string name="screen_pinning_toast_no_navbar">이 화면의 고정을 해제하려면 뒤의 &amp; 버튼을 길게 누릅니다.</string>
-    <!-- Omni Weather -->
-    <string name="omnijaws_service_error">에러</string>
-    <string name="omnijaws_service_unkown">날씨 데이터 없음</string>
-    <string name="omnijaws_service_error_long">날씨 정보 불러오기 오류</string>
-    <string name="omnijaws_service_disabled">서비스 사용 중지됨</string>
-    <string name="omnijaws_detail_header">날씨</string>
-    <string name="omnijaws_label_default">날씨</string>
-    <string name="omnijaws_current_text">지금</string>
-    <string name="omnijaws_package_not_available">OmniJaws를 사용할 수 없음</string>
-    <string name="omnijaws_service_last_update">마지막 업데이트:</string>
     <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
     <!-- OnTheSpot: Action confirmation button text. [CHAR LIMIT=NONE] -->
     <!-- OnTheSpot: Quick Settings quick pull-down feature description message. [CHAR LIMIT=NONE] -->
@@ -72,4 +62,5 @@
     <string name="accessibility_quick_settings_caffeine_on">카페인 켜짐.</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">USB 테더링</string>
+    <!-- Compass QS Tile -->
 </resources>
