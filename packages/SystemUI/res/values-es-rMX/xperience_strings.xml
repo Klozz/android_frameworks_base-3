@@ -50,16 +50,6 @@
     <string name="mod_info_status_not_charging">No se está cargando</string>
     <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
     <string name="screen_pinning_toast_no_navbar">Para anular la fijación, mantenga presionado el botón de atrás</string>
-    <!-- Omni Weather -->
-    <string name="omnijaws_service_error">Error</string>
-    <string name="omnijaws_service_unkown">No hay datos metereológicos</string>
-    <string name="omnijaws_service_error_long">Error al cargar datos meteorológicos</string>
-    <string name="omnijaws_service_disabled">Servicio deshabilitado</string>
-    <string name="omnijaws_detail_header">Clima</string>
-    <string name="omnijaws_label_default">Clima</string>
-    <string name="omnijaws_current_text">Ahora</string>
-    <string name="omnijaws_package_not_available">OmniJaws no está disponible</string>
-    <string name="omnijaws_service_last_update">Última actualización:</string>
     <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
     <string name="on_the_spot_deny">NO, GRACIAS</string>
     <!-- OnTheSpot: Action confirmation button text. [CHAR LIMIT=NONE] -->
@@ -81,4 +71,20 @@
     <string name="accessibility_quick_settings_caffeine_on">Cafeína activada.</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">Anclaje de red por USB</string>
+    <!-- Compass QS Tile -->
+    <string name="quick_settings_compass_label">Brújula</string>
+    <string name="quick_settings_compass_value"><xliff:g id="grados">%1$.0f</xliff:g>\u00b0 <xliff:g id="dirección">%2$s</xliff:g></string>
+    <string name="quick_settings_compass_init">Inicializando\u2026</string>
+    <string name="accessibility_quick_settings_compass_off">Brújula deshabilitada.</string>
+    <string name="accessibility_quick_settings_compass_on">Brújula habilitada.</string>
+    <string name="accessibility_quick_settings_compass_changed_off">La brújula ha sido deshabilitada.</string>
+    <string name="accessibility_quick_settings_compass_changed_on">La brújula ha sido habilitada.</string>
+    <string name="quick_settings_compass_N">N</string>
+    <string name="quick_settings_compass_NE">NE</string>
+    <string name="quick_settings_compass_E">E</string>
+    <string name="quick_settings_compass_SE">SE</string>
+    <string name="quick_settings_compass_S">S</string>
+    <string name="quick_settings_compass_SW">SO</string>
+    <string name="quick_settings_compass_W">O</string>
+    <string name="quick_settings_compass_NW">NO</string>
 </resources>
