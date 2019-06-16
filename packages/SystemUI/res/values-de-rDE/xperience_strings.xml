@@ -26,7 +26,6 @@
     <!-- Indication on the keyguard that is shown when the device is charging with a turbo power charger. Should match keyguard_plugged_in_turbo_power_charging [CHAR LIMIT=40]-->
     <!-- Moto mods -->
     <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
-    <!-- Omni Weather -->
     <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
     <!-- OnTheSpot: Action confirmation button text. [CHAR LIMIT=NONE] -->
     <!-- OnTheSpot: Quick Settings quick pull-down feature description message. [CHAR LIMIT=NONE] -->
@@ -36,4 +35,5 @@
     <!--Tiles-->
     <!-- Caffeine QS tile -->
     <!-- USB tethering QS tile -->
+    <!-- Compass QS Tile -->
 </resources>
