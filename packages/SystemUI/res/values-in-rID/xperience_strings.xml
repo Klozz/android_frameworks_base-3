@@ -47,16 +47,6 @@
     <!-- Moto mods -->
     <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
     <string name="screen_pinning_toast_no_navbar">Untuk melepaskan sematan layar, sentuh &amp; tahan tombol Kembali</string>
-    <!-- Omni Weather -->
-    <string name="omnijaws_service_error">Galat</string>
-    <string name="omnijaws_service_unkown">Tidak ada data cuaca</string>
-    <string name="omnijaws_service_error_long">Kesalahan memuat data cuaca</string>
-    <string name="omnijaws_service_disabled">Layanan dinonaktifkan</string>
-    <string name="omnijaws_detail_header">Cuaca</string>
-    <string name="omnijaws_label_default">Cuaca</string>
-    <string name="omnijaws_current_text">Sekarang</string>
-    <string name="omnijaws_package_not_available">OmniJaws tidak tersedia</string>
-    <string name="omnijaws_service_last_update">Pembaharuan Terakhir:</string>
     <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
     <string name="on_the_spot_deny">Tidak terima kasih</string>
     <!-- OnTheSpot: Action confirmation button text. [CHAR LIMIT=NONE] -->
@@ -78,4 +68,5 @@
     <string name="accessibility_quick_settings_caffeine_on">Caffeine on.</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">USB tethering</string>
+    <!-- Compass QS Tile -->
 </resources>
