@@ -50,16 +50,6 @@
     <string name="mod_info_status_not_charging">Не заряжается</string>
     <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
     <string name="screen_pinning_toast_no_navbar">Чтобы открепить экран, нажмите &amp; удерживайте кнопку «Назад»</string>
-    <!-- Omni Weather -->
-    <string name="omnijaws_service_error">Ошибка</string>
-    <string name="omnijaws_service_unkown">Нет данных о погоде</string>
-    <string name="omnijaws_service_error_long">Ошибка при загрузке данных о погоде</string>
-    <string name="omnijaws_service_disabled">Служба отключена</string>
-    <string name="omnijaws_detail_header">Погода</string>
-    <string name="omnijaws_label_default">Погода</string>
-    <string name="omnijaws_current_text">Сейчас</string>
-    <string name="omnijaws_package_not_available">OmniJaws недоступен</string>
-    <string name="omnijaws_service_last_update">Последнее обновление:</string>
     <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
     <string name="on_the_spot_deny">НЕТ, СПАСИБО</string>
     <!-- OnTheSpot: Action confirmation button text. [CHAR LIMIT=NONE] -->
@@ -81,4 +71,5 @@
     <string name="accessibility_quick_settings_caffeine_on">Запрет сна вкл.</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">USB-модем</string>
+    <!-- Compass QS Tile -->
 </resources>
