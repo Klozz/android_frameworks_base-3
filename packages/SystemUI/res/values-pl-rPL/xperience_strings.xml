@@ -46,16 +46,6 @@
     <!-- Moto mods -->
     <!-- Notify use that they are in Lock-to-app (for devices without navbar)-->
     <string name="screen_pinning_toast_no_navbar">Aby odpiąć ten ekran, naciśnij &amp; przytrzymaj Wstecz</string>
-    <!-- Omni Weather -->
-    <string name="omnijaws_service_error">Błąd</string>
-    <string name="omnijaws_service_unkown">Brak danych pogodowych</string>
-    <string name="omnijaws_service_error_long">Błąd ładowania danych pogodowych</string>
-    <string name="omnijaws_service_disabled">Usługa jest wyłączona</string>
-    <string name="omnijaws_detail_header">Pogoda</string>
-    <string name="omnijaws_label_default">Pogoda</string>
-    <string name="omnijaws_current_text">Teraz</string>
-    <string name="omnijaws_package_not_available">OmniJaws nie jest dostępny</string>
-    <string name="omnijaws_service_last_update">Ostatnia aktualizacja:</string>
     <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
     <!-- OnTheSpot: Action confirmation button text. [CHAR LIMIT=NONE] -->
     <!-- OnTheSpot: Quick Settings quick pull-down feature description message. [CHAR LIMIT=NONE] -->
@@ -72,4 +62,5 @@
     <string name="accessibility_quick_settings_caffeine_on">Kofeina wł.</string>
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">Tethering USB</string>
+    <!-- Compass QS Tile -->
 </resources>
