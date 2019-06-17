@@ -17,6 +17,15 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="reboot_to_recovery_title">Рекавери</string>
+    <string name="reboot_to_recovery_message">Перезагрузка в рекавери</string>
+    <string name="reboot_to_bootloader_title">Загрузчик</string>
+    <string name="reboot_to_bootloader_message">Перезагрузка в загрузчик</string>
+    <string name="reboot_title">Перезагрузка</string>
+    <string name="reboot_message">Перезагрузка системы</string>
     <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessFontManager">доступ к менеджеру шрифтов</string>
     <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessFontManager">Разрешает приложению получить доступ к менеджеру шрифтов.</string>
+    <!-- Informative text shown when the device is in One handed mode. It also explains how to exit the mode. -->
 </resources>
