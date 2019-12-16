@@ -20,8 +20,40 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Custom QS tiles -->
     <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Cafeína</string>
+    <string name="accessibility_quick_settings_caffeine_off">Cafeína desactivada.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Cafeína activada.</string>
     <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Notificaciones emergentes</string>
+    <string name="accessibility_quick_settings_heads_up_off">Notificaciones emergentes desactivadas.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Notificaciones emergentes activadas.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Desactivando notificaciones emergentes.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Activando notificaciones emergentes.</string>
+    <string name="statusbar_items_title">Icono de barra de estado</string>
+    <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
+    <string name="on_the_spot_deny">NO, GRACIAS</string>
+    <!-- OnTheSpot: Action confirmation button text. [CHAR LIMIT=NONE] -->
+    <string name="on_the_spot_confirm">DE ACUERDO</string>
+    <!-- OnTheSpot: Quick Settings quick pull-down feature description message. [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_quick_pull_down">¿Te gustaría que al deslizar en la parte derecha de la barra de estado se abriese rápidamente el panel de Ajustes Rápidos?</string>
+    <!-- OnTheSpot: Title of the Quick Settings quick pull-down feature for the reset dialog. [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_quick_pull_down_name">Deslizamiento rápido de barra de estado</string>
+    <string name="quick_settings_quick_pull_down_summary">Expande automáticamente los Ajustes Rápidos al deslizar desde la parte derecha de la pantalla</string>
+    <!-- OnTheSpot: Extended Restart feature description message. [CHAR LIMIT=NONE] -->
+    <string name="extended_restart">¿Desea mantener pulsado el botón de reiniciar para acceder a las opciones de reinicio extendidas?</string>
+    <!-- OnTheSpot: Title of the Extended Restart feature for the reset dialog. [CHAR LIMIT=NONE] -->
+    <string name="extended_restart_name">Reinicio extendido</string>
+    <string name="extended_restart_summary">Reiniciar el dispositivo en diferentes modos como el cargador de arranque y el recovery</string>
     <!-- Quick Settings brightness slider -->
+    <string name="tuner_quick_settings">Ajustes rápidos</string>
+    <string name="tuner_show_brightness_new">Mostrar barra de brillo</string>
+    <string name="tuner_brightness_position_bottom">Mostrar la barra de brillo abajo</string>
+    <string name="tuner_show_secure_title">Mostrar pie de seguridad</string>
     <!-- tunner battery bar -->
+    <string name="tuner_keyguard_show_battery_bar_title">Mostrar barra de batería</string>
+    <string name="tuner_keyguard_show_battery_bar_summary">Mostrar barra de batería al cargar siempre en pantalla</string>
+    <string name="tuner_keyguard_show_battery_bar_always_title">Mostrar siempre la barra de batería</string>
+    <string name="tuner_keyguard_show_battery_bar_always_summary">Mostrar siempre la barra de batería al cargar</string>
     <!-- Name of the volte status bar icon. -->
+    <string name="status_bar_volte">VoLTE</string>
 </resources>
