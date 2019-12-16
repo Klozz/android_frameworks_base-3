@@ -17,7 +17,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="reboot_to_recovery_title">Pemulihan</string>
+    <string name="reboot_to_recovery_message">Reboot ke pemulihan</string>
+    <string name="reboot_to_bootloader_title">Bootloader</string>
+    <string name="reboot_to_bootloader_message">Mulai ulang ke bootloader</string>
+    <string name="reboot_title">Mulai ulang</string>
+    <string name="reboot_message">Sistem reboot</string>
     <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessFontManager">akses pengelola font</string>
     <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessFontManager">Mengizinkan aplikasi mengakses pengelola font.</string>
     <!-- Informative text shown when the device is in One handed mode. It also explains how to exit the mode. -->
+    <string name="onehand_guide" xliff:restype="x-GENERIC/FULLSCREEN/TEXT">Ketuk area kosong untuk keluar dari mode Satu tangan</string>
 </resources>
