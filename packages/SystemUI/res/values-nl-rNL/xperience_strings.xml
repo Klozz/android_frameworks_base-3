@@ -21,6 +21,12 @@
     <!-- Custom QS tiles -->
     <!-- Caffeine QS tile -->
     <!-- Heads up QS tile -->
+    <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
+    <!-- OnTheSpot: Action confirmation button text. [CHAR LIMIT=NONE] -->
+    <!-- OnTheSpot: Quick Settings quick pull-down feature description message. [CHAR LIMIT=NONE] -->
+    <!-- OnTheSpot: Title of the Quick Settings quick pull-down feature for the reset dialog. [CHAR LIMIT=NONE] -->
+    <!-- OnTheSpot: Extended Restart feature description message. [CHAR LIMIT=NONE] -->
+    <!-- OnTheSpot: Title of the Extended Restart feature for the reset dialog. [CHAR LIMIT=NONE] -->
     <!-- Quick Settings brightness slider -->
     <!-- tunner battery bar -->
     <!-- Name of the volte status bar icon. -->
