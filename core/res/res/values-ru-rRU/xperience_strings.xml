@@ -21,8 +21,18 @@
     <!-- Extended Restart -->
     <!-- Defined in res/res/values/strings.xml -
     <string name="global_action_restart">Restart</string>-->
+    <string name="global_action_quick_restart">Быстрая перезагрузка</string>
+    <string name="global_action_recovery">Рекавери</string>
+    <string name="global_action_bootloader">Загрузчик</string>
     <!-- Shutdown Thread -->
+    <string name="global_restart">Перезагрузка</string>
+    <string name="global_restart_message">Перезагрузка\u2026</string>
     <!-- Can be used in SysUIReboot -->
+    <string name="global_quick_restart">Быстрая перезагрузка</string>
+    <string name="global_restart_recovery">Рекавери</string>
+    <string name="global_restart_recovery_message">Перезагрузка в Recovery\u2026</string>
     <!-- Can be used in SysUIReboot -->
+    <string name="global_restart_bootloader">Загрузчик</string>
+    <string name="global_restart_bootloader_message">Перезагрузка в режим загрузчика\u2026</string>
     <!-- Can be used in SysUIReboot -->
 </resources>
