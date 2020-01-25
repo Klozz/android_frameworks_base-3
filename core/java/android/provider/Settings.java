@@ -4627,7 +4627,26 @@ public final class Settings {
                 BOOLEAN_VALIDATOR;
 
         /**
+         * Whether to use color from wallpaper for Ambient edge light
+         * @hide
+         */
+        public static final String PULSE_AMBIENT_LIGHT_AUTO_COLOR = "pulse_ambient_light_auto_color";
+
+        /** @hide */
+        private static final Validator PULSE_AMBIENT_LIGHT_AUTO_COLOR_VALIDATOR = BOOLEAN_VALIDATOR;
+
+        /**
+         * Duration of Ambient edge light in seconds
+         * @hide
+         */
+        public static final String PULSE_AMBIENT_LIGHT_DURATION = "pulse_ambient_light_duration";
+
+        /** @hide */
+        private static final Validator PULSE_AMBIENT_LIGHT_DURATION_VALIDATOR = ANY_INTEGER_VALIDATOR;
+
+        /**
          * Network traffic inactivity threshold (default is 1 kBs)
+         *
          * @hide
          */
         public static final String NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD = "network_traffic_autohide_threshold";
@@ -4671,6 +4690,74 @@ public final class Settings {
 
         /** @hide */
         private static final Validator PULSE_AMBIENT_LIGHT_COLOR_VALIDATOR = ANY_STRING_VALIDATOR;
+
+        /**
+         * Whether to blink flashlight for incoming calls
+         * 0 = Disabled (Default)
+         * 1 = Blink flashlight only in Ringer mode
+         * 2 = Blink flashlight only in DND mode
+         * 3 = Blink flashlight always regardless of ringer mode
+         * @hide
+         */
+        public static final String FLASHLIGHT_ON_CALL = "flashlight_on_call";
+        /** @hide */
+        public static final Validator FLASHLIGHT_ON_CALL_VALIDATOR =
+                new SettingsValidators.InclusiveIntegerRangeValidator(0, 3);
+
+        /**
+         * Whether to use the custom status bar header or not
+         * @hide
+         */
+        public static final String STATUS_BAR_CUSTOM_HEADER = "status_bar_custom_header";
+
+        private static final Validator STATUS_BAR_CUSTOM_HEADER_VALIDATOR = BOOLEAN_VALIDATOR;
+
+        /**
+         * Whether to apply a shadow on top of the header image
+         * value is the alpha value of the shadow image is 0 -> no shadow -> 255 black
+         * @hide
+         */
+        public static final String STATUS_BAR_CUSTOM_HEADER_SHADOW = "status_bar_custom_header_shadow";
+
+        private static final Validator STATUS_BAR_CUSTOM_HEADER_SHADOW_VALIDATOR = ANY_INTEGER_VALIDATOR;
+
+        /**
+         * header image package to use for daylight header - package name - null if default
+         * @hide
+         */
+        public static final String STATUS_BAR_DAYLIGHT_HEADER_PACK = "status_bar_daylight_header_pack";
+
+        private static final Validator STATUS_BAR_DAYLIGHT_HEADER_PACK_VALIDATOR = ANY_STRING_VALIDATOR;
+
+        /**
+         * Current active provider - available currently "static" "daylight"
+         * @hide
+         */
+        public static final String STATUS_BAR_CUSTOM_HEADER_PROVIDER = "status_bar_custom_header_provider";
+
+        private static final Validator STATUS_BAR_CUSTOM_HEADER_PROVIDER_VALIDATOR = ANY_STRING_VALIDATOR;
+
+        /**
+         * Manual override picture to use
+         * @hide
+         */
+        public static final String STATUS_BAR_CUSTOM_HEADER_IMAGE = "status_bar_custom_header_image";
+
+        private static final Validator STATUS_BAR_CUSTOM_HEADER_IMAGE_VALIDATOR = ANY_STRING_VALIDATOR;
+
+        /**
+         * @hide
+         */
+        public static final String STATUS_BAR_FILE_HEADER_IMAGE = "status_bar_file_header_image";
+
+        private static final Validator STATUS_BAR_FILE_HEADER_IMAGE_VALIDATOR = ANY_STRING_VALIDATOR;
+
+        /**
+         * @hide
+         */
+        public static final String USE_OLD_MOBILETYPE = "use_old_mobiletype";
+
+        private static final Validator USE_OLD_MOBILETYPE_VALIDATOR = BOOLEAN_VALIDATOR;
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
@@ -4745,6 +4832,16 @@ public final class Settings {
             NETWORK_TRAFFIC_HIDEARROW,
             PULSE_AMBIENT_LIGHT,
             PULSE_AMBIENT_LIGHT_COLOR,
+            PULSE_AMBIENT_LIGHT_AUTO_COLOR,
+            PULSE_AMBIENT_LIGHT_DURATION,
+            FLASHLIGHT_ON_CALL,
+            STATUS_BAR_CUSTOM_HEADER,
+            STATUS_BAR_CUSTOM_HEADER_SHADOW,
+            STATUS_BAR_DAYLIGHT_HEADER_PACK,
+            STATUS_BAR_CUSTOM_HEADER_PROVIDER,
+            STATUS_BAR_CUSTOM_HEADER_IMAGE,
+            STATUS_BAR_FILE_HEADER_IMAGE,
+            USE_OLD_MOBILETYPE,
         };
 
         /**
@@ -4876,6 +4973,16 @@ public final class Settings {
             PRIVATE_SETTINGS.add(FORCE_SHOW_NAVBAR);
             PRIVATE_SETTINGS.add(PULSE_AMBIENT_LIGHT);
             PRIVATE_SETTINGS.add(PULSE_AMBIENT_LIGHT_COLOR);
+            PRIVATE_SETTINGS.add(PULSE_AMBIENT_LIGHT_AUTO_COLOR);
+            PRIVATE_SETTINGS.add(PULSE_AMBIENT_LIGHT_DURATION);
+            PRIVATE_SETTINGS.add(FLASHLIGHT_ON_CALL);
+            PRIVATE_SETTINGS.add(STATUS_BAR_CUSTOM_HEADER);
+            PRIVATE_SETTINGS.add(STATUS_BAR_CUSTOM_HEADER_SHADOW);
+            PRIVATE_SETTINGS.add(STATUS_BAR_DAYLIGHT_HEADER_PACK);
+            PRIVATE_SETTINGS.add(STATUS_BAR_CUSTOM_HEADER_PROVIDER);
+            PRIVATE_SETTINGS.add(STATUS_BAR_CUSTOM_HEADER_IMAGE);
+            PRIVATE_SETTINGS.add(STATUS_BAR_FILE_HEADER_IMAGE);
+            PRIVATE_SETTINGS.add(USE_OLD_MOBILETYPE);
         }
 
         /**
@@ -4983,6 +5090,16 @@ public final class Settings {
                     ACCELEROMETER_ROTATION_ANGLES_VALIDATOR);
             VALIDATORS.put(PULSE_AMBIENT_LIGHT, PULSE_AMBIENT_LIGHT_VALIDATOR);
             VALIDATORS.put(PULSE_AMBIENT_LIGHT_COLOR, PULSE_AMBIENT_LIGHT_COLOR_VALIDATOR);
+            VALIDATORS.put(PULSE_AMBIENT_LIGHT_AUTO_COLOR, PULSE_AMBIENT_LIGHT_AUTO_COLOR_VALIDATOR);
+            VALIDATORS.put(PULSE_AMBIENT_LIGHT_DURATION, PULSE_AMBIENT_LIGHT_DURATION_VALIDATOR);
+            VALIDATORS.put(FLASHLIGHT_ON_CALL, FLASHLIGHT_ON_CALL_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_CUSTOM_HEADER, STATUS_BAR_CUSTOM_HEADER_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_CUSTOM_HEADER_SHADOW, STATUS_BAR_CUSTOM_HEADER_SHADOW_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_DAYLIGHT_HEADER_PACK, STATUS_BAR_DAYLIGHT_HEADER_PACK_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_CUSTOM_HEADER_PROVIDER, STATUS_BAR_CUSTOM_HEADER_PROVIDER_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_CUSTOM_HEADER_IMAGE, STATUS_BAR_CUSTOM_HEADER_IMAGE_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_FILE_HEADER_IMAGE, STATUS_BAR_FILE_HEADER_IMAGE_VALIDATOR);
+            VALIDATORS.put(USE_OLD_MOBILETYPE, USE_OLD_MOBILETYPE_VALIDATOR);
         }
 
         /**
@@ -9247,6 +9364,12 @@ public final class Settings {
          * @hide
          */
         public static final String LOCKSCREEN_SOLID_UNITS_OPACITY = "lockscreen_solid_units_opacity";
+
+        /**
+         * Ambient Display Visualizer
+         * @hide
+         */
+        public static final String AMBIENT_VISUALIZER_ENABLED = "ambient_visualizer";
 
         /**
          * This are the settings to be backed up.

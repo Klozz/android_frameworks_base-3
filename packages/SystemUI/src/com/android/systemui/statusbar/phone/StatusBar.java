@@ -72,6 +72,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.content.ContentResolver;
 import android.database.ContentObserver;
 import android.graphics.Point;
 import android.graphics.PointF;
@@ -489,6 +490,8 @@ public class StatusBar extends SystemUI implements DemoMode,
     protected NotificationRemoteInputManager mRemoteInputManager;
 
     private VisualizerView mVisualizerView;
+
+    private boolean mAmbientVisualizer;
 
     private final BroadcastReceiver mWallpaperChangedReceiver = new BroadcastReceiver() {
         @Override
@@ -3383,6 +3386,10 @@ public class StatusBar extends SystemUI implements DemoMode,
         mVisualizerView.setDozing(mDozing);
         updateQsExpansionEnabled();
         Trace.endSection();
+
+        if (mAmbientVisualizer && mDozing) {
+            mVisualizerView.setVisible(true);
+        }
     }
 
     public void userActivity() {
@@ -3840,6 +3847,26 @@ public class StatusBar extends SystemUI implements DemoMode,
         }
     };
 
+    private SbSettingsObserver mSbSettingsObserver = new SbSettingsObserver(mHandler);
+    private class SbSettingsObserver extends ContentObserver {
+        SbSettingsObserver(Handler handler) {
+            super(handler);
+        }
+
+        void observe() {
+            ContentResolver resolver = mContext.getContentResolver();
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.Secure.AMBIENT_VISUALIZER_ENABLED),
+                    false, this, UserHandle.USER_ALL);
+        }
+   }
+
+    private void setAmbientVis() {
+        mAmbientVisualizer = Settings.Secure.getIntForUser(
+                mContext.getContentResolver(), Settings.Secure.AMBIENT_VISUALIZER_ENABLED, 0,
+                UserHandle.USER_CURRENT) == 1;
+    }
+
     public int getWakefulnessState() {
         return mWakefulnessLifecycle.getWakefulness();
     }
@@ -4105,6 +4132,7 @@ public class StatusBar extends SystemUI implements DemoMode,
                     callback.onPulseStarted();
                     updateNotificationPanelTouchState();
                     setPulsing(true);
+                    KeyguardUpdateMonitor.getInstance(mContext).setPulsing(true);
                 }
 
                 @Override
@@ -4117,6 +4145,7 @@ public class StatusBar extends SystemUI implements DemoMode,
                         mStatusBarWindow.suppressWakeUpGesture(false);
                     }
                     setPulsing(false);
+                    KeyguardUpdateMonitor.getInstance(mContext).setPulsing(false);
                 }
 
                 private void setPulsing(boolean pulsing) {

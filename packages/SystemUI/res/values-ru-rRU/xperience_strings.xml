@@ -20,14 +20,37 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Custom QS tiles -->
     <!-- Caffeine QS tile -->
+    <string name="quick_settings_caffeine_label">Запрет сна</string>
+    <string name="accessibility_quick_settings_caffeine_off">Запрет сна выкл.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Запрет сна вкл.</string>
     <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Всплывающие уведомления</string>
+    <string name="accessibility_quick_settings_heads_up_off">Всплывающие уведомления выкл.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Всплывающие уведомления вкл.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Всплывающие уведомления отключены.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Всплывающие уведомления включены.</string>
+    <string name="statusbar_items_title">Значки строки состояния</string>
     <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
+    <string name="on_the_spot_deny">НЕТ, СПАСИБО</string>
     <!-- OnTheSpot: Action confirmation button text. [CHAR LIMIT=NONE] -->
+    <string name="on_the_spot_confirm">ОК</string>
     <!-- OnTheSpot: Quick Settings quick pull-down feature description message. [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_quick_pull_down">Хотите, чтобы с правого края строки уведомлений можно было вызвать панель быстрых настроек?</string>
     <!-- OnTheSpot: Title of the Quick Settings quick pull-down feature for the reset dialog. [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_quick_pull_down_name">Быстрый доступ к панели быстрых настроек</string>
+    <string name="quick_settings_quick_pull_down_summary">Автоматически открывать панель быстрых настроек при вытягивании с боковой стороны экрана</string>
     <!-- OnTheSpot: Extended Restart feature description message. [CHAR LIMIT=NONE] -->
+    <string name="extended_restart">Вы хотите долго нажать кнопку перезапуска, чтобы получить доступ к расширенным параметрам перезапуска?</string>
     <!-- OnTheSpot: Title of the Extended Restart feature for the reset dialog. [CHAR LIMIT=NONE] -->
+    <string name="extended_restart_name">Расширенная перезагрузка</string>
+    <string name="extended_restart_summary">Перезапустите устройство в разных режимах, таких как загрузчик и восстановление</string>
     <!-- Quick Settings brightness slider -->
+    <string name="tuner_quick_settings">Быстрые настройки</string>
+    <string name="tuner_show_brightness_new">Показать ползунок яркости</string>
+    <string name="tuner_brightness_position_bottom">Регулятор яркости снизу</string>
+    <string name="tuner_show_secure_title">Показать заголовок безопасности</string>
     <!-- tunner battery bar -->
+    <string name="tuner_keyguard_show_battery_bar_title">Показывать панель батареи</string>
     <!-- Name of the volte status bar icon. -->
+    <string name="status_bar_volte">VoLTE</string>
 </resources>
