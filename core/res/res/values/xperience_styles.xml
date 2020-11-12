@@ -18,6 +18,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- reTicker -->
+    <style name="TextAppearance.Notifications.reTicker" parent="@*android:style/TextAppearance.StatusBar.Icon">
+        <item name="android:textSize">14dp</item>
+        <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
+    </style>
+
     <!-- Power menu animations -->
     <style name="GlobalActionsAnimation">
         <item name="windowEnterAnimation">@anim/slide_in_up</item>
@@ -54,4 +60,5 @@
     <style name="GlobalActionsAnimationRotate">
         <item name="windowEnterAnimation">@anim/rotate</item>
     </style>
+
 </resources>
