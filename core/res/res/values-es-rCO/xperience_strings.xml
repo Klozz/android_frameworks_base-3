@@ -34,4 +34,6 @@
     <string name="global_restart_bootloader">Bootloader</string>
     <string name="global_restart_bootloader_message">Reiniciando al bootloader\u2026</string>
     <!-- Can be used in SysUIReboot -->
+    <!-- Reboot actions -->
+    <!-- Pocket Lock -->
 </resources>
