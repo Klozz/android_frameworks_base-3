@@ -34,4 +34,6 @@
     <string name="global_restart_bootloader">Загрузчик</string>
     <string name="global_restart_bootloader_message">Перезагрузка в режим загрузчика\u2026</string>
     <!-- Can be used in SysUIReboot -->
+    <!-- Reboot actions -->
+    <!-- Pocket Lock -->
 </resources>
