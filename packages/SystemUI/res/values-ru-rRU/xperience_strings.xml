@@ -48,8 +48,6 @@
     <string name="tuner_show_brightness_new">Показать ползунок яркости</string>
     <string name="tuner_brightness_position_bottom">Регулятор яркости снизу</string>
     <string name="tuner_show_secure_title">Показать заголовок безопасности</string>
-    <!-- tunner battery bar -->
-    <string name="tuner_keyguard_show_battery_bar_title">Показывать панель батареи</string>
     <!-- Name of the volte status bar icon. -->
     <string name="status_bar_volte">VoLTE</string>
 </resources>
