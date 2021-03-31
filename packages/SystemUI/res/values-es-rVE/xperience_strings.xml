@@ -17,7 +17,33 @@
 -->
 <resources>
     <!-- Power Menu -->
+    <string name="global_action_reboot">Reiniciar</string>
+    <string name="global_action_reboot_more">Reiniciar\u2026</string>
+    <string name="global_action_reboot_sub">Sistema</string>
+    <string name="global_action_reboot_recovery">Modo Recovery</string>
+    <string name="global_action_reboot_bootloader">Bootloader</string>
+    <string name="global_action_settings">Configuración</string>
     <!-- DataSwitch Tile -->
+    <string name="qs_data_switch_label">Cambiar tarjeta de datos</string>
+    <string name="qs_data_switch_toast_0">Actualmente no se ha insertado ninguna tarjeta SIM</string>
+    <string name="qs_data_switch_toast_1">Actualmente solo se ha insertado una tarjeta SIM</string>
+    <string name="qs_data_switch_changed_1">Cambiar datos a tarjeta SIM 1.</string>
+    <string name="qs_data_switch_changed_2">Cambiar tarjeta de datos por la tarjeta SIM 2.</string>
     <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Cafeína</string>
+    <string name="accessibility_quick_settings_caffeine_off">Cafeína desactivada</string>
+    <string name="accessibility_quick_settings_caffeine_on">Cafeína activada</string>
     <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Notificaciones emergentes</string>
+    <string name="accessibility_quick_settings_heads_up_off">Notificaciones emergentes desactivadas.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Notificaciones emergentes activadas.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Desactivando notificaciones emergentes.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Activando notificaciones emergentes.</string>
+    <!-- Now playing lockscreen music Ticker -->
+    <string name="ambientmusic_songinfo" formatted="false">%s por %s</string>
+    <!-- Icon tuner -->
+    <string name="statusbar_items_title">Ajuste de iconos</string>
+    <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">Píxeles inteligentes</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Habilitar píxeles inteligentes automáticamente</string>
 </resources>
