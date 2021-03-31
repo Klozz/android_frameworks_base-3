@@ -39,4 +39,11 @@
     <string name="accessibility_quick_settings_heads_up_on">Notificaciones emergentes activadas.</string>
     <string name="accessibility_quick_settings_heads_up_changed_off">Desactivando notificaciones emergentes.</string>
     <string name="accessibility_quick_settings_heads_up_changed_on">Activando notificaciones emergentes.</string>
+    <!-- Now playing lockscreen music Ticker -->
+    <string name="ambientmusic_songinfo" formatted="false">%s por %s</string>
+    <!-- Icon tuner -->
+    <string name="statusbar_items_title">Ajuste de iconos</string>
+    <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">Píxeles inteligentes</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Habilitar píxeles inteligentes automáticamente</string>
 </resources>
