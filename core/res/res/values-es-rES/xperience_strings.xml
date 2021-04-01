@@ -35,5 +35,12 @@
     <string name="global_restart_bootloader_message">Reiniciando al bootloader\u2026</string>
     <!-- Can be used in SysUIReboot -->
     <!-- Reboot actions -->
+    <string name="reboot_to_recovery_title">Modo Recovery</string>
+    <string name="reboot_to_recovery_message">Reiniciando en modo recovery</string>
+    <string name="reboot_to_bootloader_title">Bootloader</string>
+    <string name="reboot_to_bootloader_message">Reiniciando en modo bootloader</string>
+    <string name="reboot_title">Reiniciar</string>
+    <string name="reboot_message">Reiniciando sistema</string>
     <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">Pulse y mantenga el botón de encendido para desbloquear</string>
 </resources>
