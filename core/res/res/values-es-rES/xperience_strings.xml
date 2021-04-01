@@ -24,4 +24,5 @@
     <string name="reboot_system_title">Reiniciar sistema</string>
     <string name="reboot_system_message">Reiniciando el sistema\u2026</string>
     <!-- Icon tuner -->
+    <string name="statusbar_items_title">Ajuste de iconos</string>
 </resources>
