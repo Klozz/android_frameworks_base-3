@@ -20,9 +20,19 @@
     <!-- Extended Restart -->
     <!-- Defined in res/res/values/strings.xml -
     <string name="global_action_restart">Restart</string>-->
+    <string name="global_action_quick_restart">Mulai ulang cepat</string>
+    <string name="global_action_recovery">Pemulihan</string>
+    <string name="global_action_bootloader">Bootloader</string>
     <!-- Shutdown Thread -->
+    <string name="global_restart">Mulai ulang</string>
+    <string name="global_restart_message">Memulai ulang\u2026</string>
     <!-- Can be used in SysUIReboot -->
+    <string name="global_quick_restart">Mulai ulang cepat</string>
+    <string name="global_restart_recovery">Pemulihan</string>
+    <string name="global_restart_recovery_message">Memulai ulang ke pemulihan\u2026</string>
     <!-- Can be used in SysUIReboot -->
+    <string name="global_restart_bootloader">Bootloader</string>
+    <string name="global_restart_bootloader_message">Memulai ulang ke bootloader\u2026</string>
     <!-- Can be used in SysUIReboot -->
     <!-- Reboot actions -->
     <!-- Pocket Lock -->
