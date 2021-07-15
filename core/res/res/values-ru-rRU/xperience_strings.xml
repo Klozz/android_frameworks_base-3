@@ -27,4 +27,5 @@
     <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_accessFontManager">Разрешает приложению получить доступ к менеджеру шрифтов.</string>
     <!-- Informative text shown when the device is in One handed mode. It also explains how to exit the mode. -->
+    <string name="onehand_guide" xliff:restype="x-GENERIC/FULLSCREEN/TEXT">Коснитесь пустой области, чтобы выйти из режима для одной руки</string>
 </resources>
