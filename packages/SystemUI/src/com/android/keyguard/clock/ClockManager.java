@@ -162,6 +162,16 @@ public final class ClockManager {
         addBuiltinClock(() -> new OronosClockController(res, layoutInflater, colorExtractor));
         addBuiltinClock(() -> new MNMLBoxClockController(res, layoutInflater, colorExtractor));
         addBuiltinClock(() -> new MNMLMinimalClockController(res, layoutInflater, colorExtractor));
+        addBuiltinClock(() -> new ShapeShiftClockController(res, layoutInflater, colorExtractor));
+        addBuiltinClock(() -> new IDEClockController(res, layoutInflater, colorExtractor, context));
+        addBuiltinClock(() -> new SquaryClockController(res, layoutInflater, colorExtractor));
+        addBuiltinClock(() -> new FireCircleClockController(res, layoutInflater, colorExtractor, context));
+        addBuiltinClock(() -> new RainbowCircleClockController(res, layoutInflater, colorExtractor, context));
+        addBuiltinClock(() -> new ExplosionCircleClockController(res, layoutInflater, colorExtractor, context));
+        addBuiltinClock(() -> new BlueCircleClockController(res, layoutInflater, colorExtractor, context));
+        addBuiltinClock(() -> new BlueV2CircleClockController(res, layoutInflater, colorExtractor, context));
+        addBuiltinClock(() -> new AtomClockController(res, layoutInflater, colorExtractor, context));
+        addBuiltinClock(() -> new PacmanClockController(res, layoutInflater, colorExtractor, context));
 
         // Store the size of the display for generation of clock preview.
         DisplayMetrics dm = res.getDisplayMetrics();

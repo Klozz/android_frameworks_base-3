@@ -20,6 +20,7 @@ import android.annotation.IntDef;
 import android.annotation.NonNull;
 import android.annotation.Nullable;
 import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.graphics.PixelFormat;
 import android.hardware.biometrics.BiometricAuthenticator;
 import android.hardware.biometrics.BiometricConstants;
@@ -234,6 +235,9 @@ public class AuthContainerView extends LinearLayout
                     mHandler.postDelayed(() -> {
                         addCredentialView(false /* animatePanel */, true /* animateContents */);
                     }, mInjector.getAnimateCredentialStartDelayMs());
+                    break;
+                case AuthBiometricView.Callback.ACTION_USE_FACE:
+                    mConfig.mCallback.onUseFacePressed();
                     break;
                 default:
                     Log.e(TAG, "Unhandled action: " + action);
@@ -460,10 +464,12 @@ public class AuthContainerView extends LinearLayout
 
     @Override
     public void show(WindowManager wm, @Nullable Bundle savedState) {
+        boolean hasFod = false;
         if (mBiometricView != null) {
             mBiometricView.restoreState(savedState);
+            hasFod = mBiometricView.getHasFod();
         }
-        wm.addView(this, getLayoutParams(mWindowToken));
+        wm.addView(this, getLayoutParams(mWindowToken, hasFod));
     }
 
     @Override
@@ -593,7 +599,7 @@ public class AuthContainerView extends LinearLayout
         }
     }
 
-    private void removeWindowIfAttached(boolean sendReason) {
+    private synchronized void removeWindowIfAttached(boolean sendReason) {
         if (sendReason) {
             sendPendingCallbackIfNotNull();
         }
@@ -604,7 +610,12 @@ public class AuthContainerView extends LinearLayout
         }
         Log.d(TAG, "Removing container, mSysUiSessionId: " + mConfig.mSysUiSessionId);
         mContainerState = STATE_GONE;
-        mWindowManager.removeView(this);
+        try {
+            mWindowManager.removeView(this);
+        } catch (IllegalArgumentException e) {
+            // Looks like the view is already gone??
+            // Whatever, just ignore it then.
+        }
     }
 
     @VisibleForTesting
@@ -624,7 +635,7 @@ public class AuthContainerView extends LinearLayout
      * @param windowToken token for the window
      * @return
      */
-    public static WindowManager.LayoutParams getLayoutParams(IBinder windowToken) {
+    public static WindowManager.LayoutParams getLayoutParams(IBinder windowToken, boolean hasFod) {
         final int windowFlags = WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED
                 | WindowManager.LayoutParams.FLAG_SECURE;
         final WindowManager.LayoutParams lp = new WindowManager.LayoutParams(
@@ -637,6 +648,9 @@ public class AuthContainerView extends LinearLayout
         lp.setFitInsetsTypes(lp.getFitInsetsTypes() & ~WindowInsets.Type.ime());
         lp.setTitle("BiometricPrompt");
         lp.token = windowToken;
+        if (hasFod) {
+            lp.screenOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
+        }
         return lp;
     }
 }

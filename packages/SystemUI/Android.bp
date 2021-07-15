@@ -70,9 +70,15 @@ android_library {
         "SystemUI-proto",
         "dagger2-2.19",
         "jsr330",
+        "airbnb-lottie",
         "vendor.xperience.biometrics.fingerprint.inscreen-V1.0-java",
+        "faceunlock_framework",
     ],
     manifest: "AndroidManifest.xml",
+
+    libs: [
+        "ims-common",
+    ],
 
     kotlincflags: ["-Xjvm-default=enable"],
 
@@ -142,11 +148,13 @@ android_library {
         "truth-prebuilt",
         "dagger2-2.19",
         "jsr330",
+        "airbnb-lottie",
         "vendor.xperience.biometrics.fingerprint.inscreen-V1.0-java",
     ],
     libs: [
         "android.test.runner",
         "android.test.base",
+        "ims-common",
     ],
     kotlincflags: ["-Xjvm-default=enable"],
     aaptflags: [
@@ -171,6 +179,10 @@ android_app {
     optimize: {
         proguard_flags_files: ["proguard.flags"],
     },
+
+    libs: [
+        "ims-common",
+    ],
 
     kotlincflags: ["-Xjvm-default=enable"],
 

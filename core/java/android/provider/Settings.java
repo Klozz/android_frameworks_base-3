@@ -4816,7 +4816,7 @@ public final class Settings {
          *    1 - Show percentage
          * @hide
          */
-        public static final String SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
+        public static final String SHOW_BATTERY_PERCENT = "dummy_show_battery_percent";
 
         /**
          * Whether or not to enable multiple audio focus.
@@ -4857,11 +4857,26 @@ public final class Settings {
         public static final String PULSE_ON_NEW_TRACKS = "pulse_on_new_tracks";
 
 	/**
+         * Whether user can swap the order of the Alert Slider.
+         * * Whether user can invert the order of the Alert Slider.
+         * 0: Default
+         * 1: Inverted
+         * @hide
+         */
+        public static final String ALERT_SLIDER_ORDER = "alert_slider_order";
+
+        /**
          * IMPORTANT: If you add a new public settings you also have to add it to
          * PUBLIC_SETTINGS below. If the new setting is hidden you have to add
          * it to PRIVATE_SETTINGS below. Also add a validator that can validate
          * the setting value. See an example above.
          */
+
+        /**
+         * Whether to show the battery info on the lockscreen while charging
+         * @hide
+         */
+        public static final String LOCKSCREEN_BATTERY_INFO = "lockscreen_battery_info";
 
         /**
          * Adaptive playback
@@ -4943,6 +4958,21 @@ public final class Settings {
           * @hide
          */
         public static final String NETWORK_TRAFFIC_HIDEARROW = "network_traffic_hidearrow";
+
+	 /**
+         * Battery style
+         * @hide
+         */
+        public static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
+
+        /**
+          * Statusbar Battery %
+          * 0: Hide the battery percentage
+          * 1: Display the battery percentage inside the icon
+          * 2: Display the battery percentage next to Icon
+          * @hide
+          */
+        public static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
 
         /**
          * Keys we no longer back up under the current schema, but want to continue to

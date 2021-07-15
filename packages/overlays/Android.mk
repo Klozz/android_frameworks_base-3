@@ -31,7 +31,7 @@ LOCAL_REQUIRED_MODULES := \
 	AccentColorAquamarineOverlay \
 	AccentColorTangerineOverlay \
 	AccentColorPixelBlueOverlay \
-        AccentColoriOSBlueOverlay \
+    AccentColoriOSBlueOverlay \
 	DisplayCutoutEmulationCornerOverlay \
 	DisplayCutoutEmulationDoubleOverlay \
 	DisplayCutoutEmulationHoleOverlay \
@@ -39,9 +39,13 @@ LOCAL_REQUIRED_MODULES := \
 	DisplayCutoutEmulationWaterfallOverlay \
 	FontNotoSerifSourceOverlay \
 	FontArvoLatoOverlay \
-        FontArbutusSourceOverlay \
+    FontArbutusSourceOverlay \
 	FontRubikRubikOverlay \
 	FontGoogleSansOverlay \
+	FontGoogleSansLatoOverlay \
+        FontKaiOverlay \
+        FontSamOverlay \
+        FontVictorOverlay \
 	IconPackCircularAndroidOverlay \
 	IconPackCircularLauncherOverlay \
 	IconPackCircularSettingsOverlay \

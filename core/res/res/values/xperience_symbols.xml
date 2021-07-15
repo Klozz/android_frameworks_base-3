@@ -45,4 +45,18 @@
 
     <!-- Whether the device supports Smart Pixels -->
     <java-symbol type="bool" name="config_enableSmartPixels" />
+
+    <!-- Whether device has dash charging support -->
+    <java-symbol type="bool" name="config_hasDashCharger" />
+
+    <!-- Enable face auth only when swiping security view -->
+    <java-symbol type="bool" name="config_faceAuthOnlyOnSecurityView" />
+
+    <java-symbol type="bool" name="config_needCustomFODView" />
+
+    <!-- Alert Slider -->
+    <java-symbol type="string" name="alert_slider_state_path" />
+    <java-symbol type="string" name="alert_slider_uevent_match_path" />
+    <java-symbol type="bool" name="config_hasAlertSlider" />
+
 </resources>

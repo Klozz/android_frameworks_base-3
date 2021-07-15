@@ -21,4 +21,6 @@
   <color name="bubbleMinuteHandColor">#F5C983</color>
   <!-- Accent color for Typographic clock. -->
   <color name="typeClockAccentColor">#F5C983</color>
+  <!-- White color -->
+  <color name="typeClockWhiteColor">#FFFFFF</color>
 </resources>

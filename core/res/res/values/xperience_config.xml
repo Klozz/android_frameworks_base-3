@@ -49,4 +49,15 @@
 
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_enableSmartPixels">false</bool>
+
+    <!-- Whether device has dash charging support -->
+    <bool name="config_hasDashCharger">false</bool>
+
+    <!-- Enable face auth only when swiping security view -->
+    <bool name="config_faceAuthOnlyOnSecurityView">false</bool>
+
+    <bool name="config_needCustomFODView">false</bool>
+
+    <!-- Whether device has an alert slider. -->
+    <bool name="config_hasAlertSlider">false</bool>
 </resources>

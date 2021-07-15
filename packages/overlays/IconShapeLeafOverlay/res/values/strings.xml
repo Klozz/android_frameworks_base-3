@@ -19,5 +19,4 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Leaf shaped overlay -->
     <string name="icon_shape_leaf_overlay" translatable="false">Leaf</string>
-
 </resources>
