@@ -35,5 +35,12 @@
     <string name="global_restart_bootloader_message">Перезагрузка в режим загрузчика\u2026</string>
     <!-- Can be used in SysUIReboot -->
     <!-- Reboot actions -->
+    <string name="reboot_to_recovery_title">Рекавери</string>
+    <string name="reboot_to_recovery_message">Перезагрузка в рекавери</string>
+    <string name="reboot_to_bootloader_title">Загрузчик</string>
+    <string name="reboot_to_bootloader_message">Перезагрузка в загрузчик</string>
+    <string name="reboot_title">Перезагрузка</string>
+    <string name="reboot_message">Перезагрузка системы</string>
     <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">Нажмите и удерживайте кнопку питания для разблокировки</string>
 </resources>
