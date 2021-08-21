@@ -23,12 +23,31 @@
     <string name="accessibility_quick_settings_caffeine_off">Caffeine off.</string>
     <string name="accessibility_quick_settings_caffeine_on">Caffeine on.</string>
     <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Notifikasi mengambang</string>
+    <string name="accessibility_quick_settings_heads_up_off">Notifikasi mengambang mati.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Notifikasi mengambang aktif.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Notifikasi mengambang dimatikan.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Notifikasi mengambang diaktifkan.</string>
+    <string name="statusbar_items_title">Ikon bilah status</string>
     <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
+    <string name="on_the_spot_deny">Tidak terima kasih</string>
     <!-- OnTheSpot: Action confirmation button text. [CHAR LIMIT=NONE] -->
+    <string name="on_the_spot_confirm">Oke</string>
     <!-- OnTheSpot: Quick Settings quick pull-down feature description message. [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_quick_pull_down">Apakah Anda ingin sisi kanan bilah status dengan cepat menarik panel Setelan Cepat?</string>
     <!-- OnTheSpot: Title of the Quick Settings quick pull-down feature for the reset dialog. [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_quick_pull_down_name">Pull-down cepat Setelan Cepat</string>
+    <string name="quick_settings_quick_pull_down_summary">Secara otomatis memperluas Setelan Cepat saat menarik dari sisi layar</string>
     <!-- OnTheSpot: Extended Restart feature description message. [CHAR LIMIT=NONE] -->
+    <string name="extended_restart">Apakah Anda ingin menekan lama tombol mulai ulang untuk mengakses opsi mulai ulang lanjutan?</string>
     <!-- OnTheSpot: Title of the Extended Restart feature for the reset dialog. [CHAR LIMIT=NONE] -->
+    <string name="extended_restart_name">Mulai ulang Lanjutan</string>
+    <string name="extended_restart_summary">Mulai ulang perangkat ke mode yang berbeda seperti bootloader dan pemulihan</string>
     <!-- Quick Settings brightness slider -->
+    <string name="tuner_quick_settings">Setelan Cepat</string>
+    <string name="tuner_show_brightness_new">Tampilkan panel geser kecerahan</string>
+    <string name="tuner_brightness_position_bottom">Panel geser kecerahan di bagian bawah</string>
+    <string name="tuner_show_secure_title">Tampilkan footer keamanan</string>
     <!-- Name of the volte status bar icon. -->
+    <string name="status_bar_volte">VoLTE</string>
 </resources>
