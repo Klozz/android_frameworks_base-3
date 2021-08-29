@@ -24,5 +24,6 @@
     <!-- Icon tuner -->
     <!-- Smart Pixels QS Tile -->
     <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <!-- Indication on the keyguard that is shown when the device is charging with a Turbo charger. Should match keyguard_plugged_in_chargeturbo [CHAR LIMIT=40]-->
     <!-- Biometric Dialog - Use Face -->
 </resources>
