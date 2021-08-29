@@ -184,6 +184,10 @@ public final class BatteryService extends SystemService {
     private long mDischargeStartTime;
     private int mDischargeStartLevel;
 
+    private boolean mChargeTurbo;
+    private boolean mHasChargeTurbo;
+    private boolean mLastChargeTurbo;
+
     private long mChargeStartTime;
     private int mChargeStartLevel;
 
@@ -214,6 +218,9 @@ public final class BatteryService extends SystemService {
 
         mHasDashCharger = mContext.getResources().getBoolean(
                 com.android.internal.R.bool.config_hasDashCharger);
+
+        mHasChargeTurbo = mContext.getResources().getBoolean(
+                com.android.internal.R.bool.config_hasChargeTurbo);
 
         mCriticalBatteryLevel = mContext.getResources().getInteger(
                 com.android.internal.R.integer.config_criticalBatteryWarningLevel);
@@ -512,6 +519,7 @@ public final class BatteryService extends SystemService {
         shutdownIfOverTempLocked();
 
         mDashCharger = mHasDashCharger && isDashCharger();
+        mChargeTurbo = mHasChargeTurbo && isChargeTurbo();
 
         if (force || (mHealthInfo.batteryStatus != mLastBatteryStatus ||
                 mHealthInfo.batteryHealth != mLastBatteryHealth ||
@@ -524,7 +532,8 @@ public final class BatteryService extends SystemService {
                 mHealthInfo.maxChargingVoltage != mLastMaxChargingVoltage ||
                 mHealthInfo.batteryChargeCounter != mLastChargeCounter ||
                 mInvalidCharger != mLastInvalidCharger ||
-                mDashCharger != mLastDashCharger)) {
+                mDashCharger != mLastDashCharger ||
+                mChargeTurbo != mLastChargeTurbo)) {
 
             if (mPlugType != mLastPlugType) {
                 if (mLastPlugType == BATTERY_PLUGGED_NONE) {
@@ -696,6 +705,7 @@ public final class BatteryService extends SystemService {
             mLastBatteryLevelCritical = mBatteryLevelCritical;
             mLastInvalidCharger = mInvalidCharger;
             mLastDashCharger = mDashCharger;
+            mLastChargeTurbo = mChargeTurbo;
         }
     }
 
@@ -724,6 +734,7 @@ public final class BatteryService extends SystemService {
         intent.putExtra(BatteryManager.EXTRA_MAX_CHARGING_VOLTAGE, mHealthInfo.maxChargingVoltage);
         intent.putExtra(BatteryManager.EXTRA_CHARGE_COUNTER, mHealthInfo.batteryChargeCounter);
         intent.putExtra(BatteryManager.EXTRA_DASH_CHARGER, mDashCharger);
+        intent.putExtra(BatteryManager.EXTRA_CHARGE_TURBO, mChargeTurbo);
         if (DEBUG) {
             Slog.d(TAG, "Sending ACTION_BATTERY_CHANGED. scale:" + BATTERY_SCALE
                     + ", info:" + mHealthInfo.toString());
@@ -781,6 +792,20 @@ public final class BatteryService extends SystemService {
     private boolean isDashCharger() {
         try {
             FileReader file = new FileReader("/sys/class/power_supply/battery/fastchg_status");
+            BufferedReader br = new BufferedReader(file);
+            String state = br.readLine();
+            br.close();
+            file.close();
+            return "1".equals(state);
+        } catch (FileNotFoundException e) {
+        } catch (IOException e) {
+        }
+        return false;
+    }
+
+    private boolean isChargeTurbo() {
+        try {
+            FileReader file = new FileReader("/sys/class/power_supply/bms/fastcharge_mode");
             BufferedReader br = new BufferedReader(file);
             String state = br.readLine();
             br.close();
@@ -1534,6 +1559,8 @@ public final class BatteryService extends SystemService {
                             if (Objects.equals(newService, oldService)) return;
 
                             Slog.i(TAG, "health: new instance registered " + mInstanceName);
+                            // #init() may be called with null callback. Skip null callbacks.
+                            if (mCallback == null) return;
                             mCallback.onRegistration(oldService, newService, mInstanceName);
                         } catch (NoSuchElementException | RemoteException ex) {
                             Slog.e(TAG, "health: Cannot get instance '" + mInstanceName

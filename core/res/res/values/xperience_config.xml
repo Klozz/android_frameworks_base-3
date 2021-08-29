@@ -60,4 +60,7 @@
 
     <!-- Whether device has an alert slider. -->
     <bool name="config_hasAlertSlider">false</bool>
+
+    <!-- Whether device has ChargeTurbo charging support all xiaomis for example -->
+    <bool name="config_hasChargeTurbo">false</bool>
 </resources>

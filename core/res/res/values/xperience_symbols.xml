@@ -59,4 +59,6 @@
     <java-symbol type="string" name="alert_slider_uevent_match_path" />
     <java-symbol type="bool" name="config_hasAlertSlider" />
 
+    <!-- Whether device has ChargeTurbo charging support all xiaomis for example -->
+    <java-symbol type="bool" name="config_hasChargeTurbo" />
 </resources>
