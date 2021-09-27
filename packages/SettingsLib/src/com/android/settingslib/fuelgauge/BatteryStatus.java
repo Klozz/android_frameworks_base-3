@@ -60,7 +60,7 @@ public class BatteryStatus {
     public final int maxChargingWattage;
     public final float temperature;
     public final boolean dashChargeStatus;
-    public final boolean chargeTurboStatus
+    public final boolean chargeTurboStatus;
     public final boolean present;
 
     public BatteryStatus(int status, int level, int plugged, int health,
@@ -75,7 +75,7 @@ public class BatteryStatus {
         this.maxChargingWattage = maxChargingWattage;
         this.temperature = temperature;
         this.dashChargeStatus = dashChargeStatus;
-		this.chargeTurboStatus = chargeTurboStatus;
+	this.chargeTurboStatus = chargeTurboStatus;
         this.present = present;
     }
 
@@ -86,7 +86,7 @@ public class BatteryStatus {
         health = batteryChangedIntent.getIntExtra(EXTRA_HEALTH, BATTERY_HEALTH_UNKNOWN);
         temperature = batteryChangedIntent.getIntExtra(EXTRA_TEMPERATURE, -1);
         dashChargeStatus = batteryChangedIntent.getBooleanExtra(EXTRA_DASH_CHARGER, false);
-		chargeTurboStatus = batteryChangedIntent.getBooleanExtra(EXTRA_CHARGE_TURBO, false);
+	chargeTurboStatus = batteryChangedIntent.getBooleanExtra(EXTRA_CHARGE_TURBO, false);
         present = batteryChangedIntent.getBooleanExtra(EXTRA_PRESENT, true);
 
         final int maxChargingMicroAmp = batteryChangedIntent.getIntExtra(EXTRA_MAX_CHARGING_CURRENT,
@@ -171,7 +171,7 @@ public class BatteryStatus {
         final int fastThreshold = context.getResources().getInteger(
                 R.integer.config_chargingFastThreshold);
         return dashChargeStatus ? CHARGING_DASH :
-		       chargeTurboStatus ? CHARGING_CHARGE_TURBO :
+	        chargeTurboStatus ? CHARGING_CHARGE_TURBO :
                 maxChargingWattage <= 0 ? CHARGING_UNKNOWN :
                 maxChargingWattage < slowThreshold ? CHARGING_SLOWLY :
                         maxChargingWattage > fastThreshold ? CHARGING_FAST :
