@@ -30,4 +30,5 @@
     <string name="pocket_view_title_cancel">Para usar tu teléfono:</string>
     <string name="pocket_view_top_tag_cancel">Compruebe si la zona azul de su teléfono está libre de cualquier obstrucción, y limpia cualquier suciedad o polvo.</string>
     <string name="pocket_view_top_tag_cancel2">Mantener presionado el botón de encendido para forzar la salida del modo bolsillo.</string>
+
 </resources>
