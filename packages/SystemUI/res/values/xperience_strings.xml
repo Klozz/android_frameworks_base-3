@@ -31,6 +31,7 @@
     <string name="accessibility_quick_settings_heads_up_changed_off">Heads up turned off.</string>
     <string name="accessibility_quick_settings_heads_up_changed_on">Heads up turned on.</string>
 
+
     <string name="statusbar_items_title">Statusbar icon</string>
 
     <!-- OnTheSpot: Action denial button text. [CHAR LIMIT=NONE] -->
@@ -55,12 +56,6 @@
     <string name="tuner_show_brightness_new">Show brightness slider</string>
     <string name="tuner_brightness_position_bottom">Brightness slider on bottom</string>
     <string name="tuner_show_secure_title">Show security footer</string>
-
-    <!-- tunner battery bar -->
-    <string name="tuner_keyguard_show_battery_bar_title">Show battery bar</string>
-    <string name="tuner_keyguard_show_battery_bar_summary">Show battery bar on charging in always on display</string>
-    <string name="tuner_keyguard_show_battery_bar_always_title">Always show battery bar</string>
-    <string name="tuner_keyguard_show_battery_bar_always_summary">Always show battery bar on charging</string>
 
     <!-- Name of the volte status bar icon. -->
     <string name="status_bar_volte">VoLTE</string>
