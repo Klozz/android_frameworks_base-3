@@ -35,4 +35,6 @@
     <!-- USB tethering QS tile -->
     <string name="quick_settings_usb_tether_label">Tethering USB</string>
     <!-- Volte icon tuner -->
+    <!-- SystemUI Tuner -->
+    <!-- Shows when people have clicked on the custom lockscreen shortcut [CHAR LIMIT=60] -->
 </resources>
