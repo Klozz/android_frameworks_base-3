@@ -20,4 +20,6 @@
     <!-- Ambient display QS tile -->
     <!-- USB tethering QS tile -->
     <!-- Volte icon tuner -->
+    <!-- SystemUI Tuner -->
+    <!-- Shows when people have clicked on the custom lockscreen shortcut [CHAR LIMIT=60] -->
 </resources>
