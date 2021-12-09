@@ -36,5 +36,11 @@
     <string name="quick_settings_usb_tether_label">Tethering USB</string>
     <!-- Volte icon tuner -->
     <!-- SystemUI Tuner -->
+    <string name="lockscreen_default">Bawaan</string>
+    <string name="lockscreen_hidden">Tidak ada</string>
     <!-- Shows when people have clicked on the custom lockscreen shortcut [CHAR LIMIT=60] -->
+    <string name="custom_hint">Geser dari ikon untuk membuka</string>
+    <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <!-- Indication on the keyguard that is shown when the device is charging with a Turbo charger. Should match keyguard_plugged_in_chargeturbo [CHAR LIMIT=40]-->
+    <!-- Heads up QS tile -->
 </resources>
