@@ -36,11 +36,23 @@
     <string name="quick_settings_usb_tether_label">Tethering USB</string>
     <!-- Volte icon tuner -->
     <!-- SystemUI Tuner -->
+    <string name="statusbar_items_title">Ikon Bilah Status</string>
     <string name="lockscreen_default">Bawaan</string>
     <string name="lockscreen_hidden">Tidak ada</string>
     <!-- Shows when people have clicked on the custom lockscreen shortcut [CHAR LIMIT=60] -->
     <string name="custom_hint">Geser dari ikon untuk membuka</string>
     <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time" formatted="false"><xliff:g id="pesentase">%2$s</xliff:g> • Dash Charging (<xliff:g id="charging_time_left" example="4 jam 2 menit">%s</xliff:g> hingga penuh)</string>
     <!-- Indication on the keyguard that is shown when the device is charging with a Turbo charger. Should match keyguard_plugged_in_chargeturbo [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_chargeturbo_time" formatted="false"><xliff:g id="pesentase">%2$s</xliff:g> • ChargeTurbo (<xliff:g id="charging_time_left" example="4 jam 2 menit">%s</xliff:g> hingga penuh)</string>
     <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Notifikasi mengambang</string>
+    <string name="accessibility_quick_settings_heads_up_off">Notifikasi mengambang nonaktif.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Notifikasi mengambang aktif.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Notifikasi mengambang dinonaktifkan.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Notifikasi mengambang diaktifkan.</string>
+    <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
+    <!-- Screen record -->
+    <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
 </resources>
