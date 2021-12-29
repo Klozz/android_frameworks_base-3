@@ -35,5 +35,12 @@
     <string name="global_restart_bootloader_message">Memulai ulang ke bootloader\u2026</string>
     <!-- Can be used in SysUIReboot -->
     <!-- Reboot actions -->
+    <string name="reboot_to_recovery_title">Pemulihan</string>
+    <string name="reboot_to_recovery_message">Memulai ulang ke pemulihan</string>
+    <string name="reboot_to_bootloader_title">Bootloader</string>
+    <string name="reboot_to_bootloader_message">Memulai ulang ke bootloader</string>
+    <string name="reboot_title">Mulai ulang</string>
+    <string name="reboot_message">Memulai ulang sistem</string>
     <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">Tekan dan tahan tombol daya untuk membuka kunci</string>
 </resources>
