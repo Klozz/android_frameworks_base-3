@@ -16,6 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Global actions -->
+    <string name="reboot_to_bootloader_title">Загрузчик</string>
+    <string name="reboot_system_title">Перезагрузка системы</string>
     <!-- Alert slider proc nodes paths. -->
     <!-- Pocket Lock -->
     <!-- Pocket Lock -->
