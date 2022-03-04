@@ -21,6 +21,7 @@
     <string name="global_action_reboot_sub">Sistema</string>
     <string name="global_action_reboot_recovery">Modo Recovery</string>
     <string name="global_action_reboot_bootloader">Bootloader (Gestor de arranque)</string>
+    <string name="global_action_reboot_fastboot">Fastboot</string>
     <string name="global_action_settings">Configuración</string>
     <!-- Caffeine QS Tile -->
     <string name="quick_settings_caffeine_label">Cafeína</string>
@@ -61,4 +62,5 @@
     <string name="screenrecord_lowquality_label">Menor calidad para un tamaño de archivo más pequeño</string>
     <string name="screenrecord_longer_timeout_switch_label">Mayor límite de tamaño de archivo\nLimitar tamaño de grabación a 15GB</string>
     <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Reconociendo rostro...</string>
 </resources>
