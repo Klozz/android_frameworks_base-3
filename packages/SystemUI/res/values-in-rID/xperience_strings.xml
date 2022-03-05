@@ -21,6 +21,7 @@
     <string name="global_action_reboot_sub">Sistem</string>
     <string name="global_action_reboot_recovery">Pemulihan</string>
     <string name="global_action_reboot_bootloader">Bootloader</string>
+    <string name="global_action_reboot_fastboot">Fastboot</string>
     <string name="global_action_settings">Setelan</string>
     <!-- Caffeine QS Tile -->
     <string name="quick_settings_caffeine_label">Batas Waktu Layar</string>
@@ -61,4 +62,5 @@
     <string name="screenrecord_lowquality_label">Kualitas lebih rendah untuk ukuran file yang lebih kecil</string>
     <string name="screenrecord_longer_timeout_switch_label">Batas ukuran file lebih besar\nBatasi ukuran perekaman hingga 15GB</string>
     <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Mengenali wajah...</string>
 </resources>
