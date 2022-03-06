@@ -30,5 +30,4 @@
     <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
     <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
     <!-- Face Unlock -->
-    <!-- CPUInfo tile -->
 </resources>
