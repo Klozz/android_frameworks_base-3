@@ -55,10 +55,26 @@
 
     <!-- Screen record -->
     <dimen name="screenrecord_dot_size">48dp</dimen>
+
     <!-- Old style mobile data indicators -->
     <dimen name="status_bar_mobile_signal_with_type_width">18dp</dimen>
     <dimen name="status_bar_mobile_signal_width">16dp</dimen>
     <dimen name="status_bar_mobile_type_height">8dp</dimen>
     <dimen name="status_bar_mobile_type_padding">2dp</dimen>
     <dimen name="status_bar_mobile_type_padding_limit">10dp</dimen>
+
+    <!-- Navbar lenght -->
+    <dimen name="navigation_home_handle_width_medium">110dp</dimen>
+    <dimen name="navigation_home_handle_width_long">140dp</dimen>
+
+    <!-- StatusBar burn-in protection -->
+    <dimen name="horizontal_max_shift">3.0dp</dimen>
+    <dimen name="vertical_max_shift">2.0dp</dimen>
+
+    <!-- Media output -->
+    <dimen name="dialog_button_vertical_inset">6dp</dimen>
+    <dimen name="dialog_button_horizontal_padding">16dp</dimen>
+    <dimen name="dialog_button_vertical_padding">8dp</dimen>
+    <dimen name="dialog_side_padding">24dp</dimen>
+    <dimen name="dialog_bottom_padding">18dp</dimen>
 </resources>

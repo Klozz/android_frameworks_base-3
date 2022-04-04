@@ -85,6 +85,7 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
     private final KeyguardStateController mKeyguardStateController;
     private final NetworkController mNetworkController;
     private LinearLayout mSystemIconArea;
+    private LinearLayout mCustomIconArea;
     private View mClockView;
     private View mOngoingCallChip;
     private View mNotificationIconAreaInner;
@@ -215,6 +216,7 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
         mStatusIcons.setPadding(mStatusIcons.getPaddingLeft(), mStatusIcons.getPaddingTop(), (batteryStyle == 5/*hidden*/ ? 0 : mSignalClusterEndPadding), mStatusIcons.getPaddingBottom());
         mBatteryMeterView = mStatusBar.findViewById(R.id.battery);
         mBatteryMeterView.addCallback(mBatteryMeterViewCallback);
+        mCustomIconArea = mStatusBar.findViewById(R.id.left_icon_area);
         mClockView = mStatusBar.findViewById(R.id.clock);
         mOngoingCallChip = mStatusBar.findViewById(R.id.ongoing_call_chip);
         mCustomCarrierLabel = mStatusBar.findViewById(R.id.statusbar_carrier_text);
@@ -452,11 +454,13 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
     public void hideNotificationIconArea(boolean animate) {
         animateHide(mNotificationIconAreaInner, animate, true);
         animateHide(mCenteredIconArea, animate, true);
+        animateHide(mCustomIconArea, animate, true);
     }
 
     public void showNotificationIconArea(boolean animate) {
         animateShow(mNotificationIconAreaInner, animate);
         animateShow(mCenteredIconArea, animate);
+        animateShow(mCustomIconArea, animate);
     }
 
     public void hideOperatorName(boolean animate) {

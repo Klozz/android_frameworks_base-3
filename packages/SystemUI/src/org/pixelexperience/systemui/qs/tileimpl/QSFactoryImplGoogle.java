@@ -30,7 +30,6 @@ import com.android.systemui.qs.tiles.CameraToggleTile;
 import com.android.systemui.qs.tiles.CastTile;
 import com.android.systemui.qs.tiles.CellularTile;
 import com.android.systemui.qs.tiles.ColorInversionTile;
-import com.android.systemui.qs.tiles.CPUInfoTile;
 import com.android.systemui.qs.tiles.DataSaverTile;
 import com.android.systemui.qs.tiles.DeviceControlsTile;
 import com.android.systemui.qs.tiles.DndTile;
@@ -105,7 +104,6 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
             Provider<UsbTetherTile> usbTetherTileProvider,
             Provider<OverlayToggleTile> overlayToggleTileProvider,
             Provider<ReverseChargingTile> reverseChargingTileProvider,
-		    Provider<CPUInfoTile> CPUInfoTileProvider,
             Provider<HeadsUpTile> headsUpTileProvider) {
         super(qsHostLazy,
                 customTileBuilderProvider,
@@ -139,8 +137,7 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
                 caffeineTileProvider,
                 ambientDisplayTileProvider,
                 usbTetherTileProvider,
-                headsUpTileProvider,
-                CPUInfoTileProvider);
+                headsUpTileProvider);
         this.mReverseChargingTileProvider = reverseChargingTileProvider;
         this.mBatterySaverTileGoogleProvider = batterySaverTileGoogleProvider;
         this.mOverlayToggleTileProvider = overlayToggleTileProvider;
