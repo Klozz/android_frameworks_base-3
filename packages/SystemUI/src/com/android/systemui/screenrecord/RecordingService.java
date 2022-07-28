@@ -21,11 +21,13 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
+import android.graphics.PixelFormat;
 import android.graphics.drawable.Icon;
 import android.media.MediaRecorder;
 import android.net.Uri;
@@ -34,6 +36,14 @@ import android.os.IBinder;
 import android.os.RemoteException;
 import android.os.UserHandle;
 import android.util.Log;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.android.internal.annotations.VisibleForTesting;
@@ -63,6 +73,9 @@ public class RecordingService extends Service implements MediaRecorder.OnInfoLis
     private static final String EXTRA_RESULT_CODE = "extra_resultCode";
     private static final String EXTRA_PATH = "extra_path";
     private static final String EXTRA_AUDIO_SOURCE = "extra_useAudio";
+    private static final String EXTRA_SHOW_STOP_DOT = "extra_showStopDot";
+    private static final String EXTRA_LOW_QUALITY = "extra_lowQuality";
+    private static final String EXTRA_LONGER_DURATION = "extra_longerDuration";
 
     private static final String ACTION_START = "com.android.systemui.screenrecord.START";
     private static final String ACTION_STOP = "com.android.systemui.screenrecord.STOP";
@@ -70,6 +83,7 @@ public class RecordingService extends Service implements MediaRecorder.OnInfoLis
             "com.android.systemui.screenrecord.STOP_FROM_NOTIF";
     private static final String ACTION_SHOW_DIALOG = "com.android.systemui.screenrecord.SHOW_DIALOG";
     private static final String ACTION_SHARE = "com.android.systemui.screenrecord.SHARE";
+    private static final String ACTION_DELETE = "com.android.systemui.screenrecord.DELETE";
     private static final String PERMISSION_SELF = "com.android.systemui.permission.SELF";
 
     private final RecordingServiceBinder mBinder;
@@ -82,6 +96,14 @@ public class RecordingService extends Service implements MediaRecorder.OnInfoLis
     private final NotificationManager mNotificationManager;
     private final UserContextProvider mUserContextTracker;
 
+    private boolean mLowQuality;
+    private boolean mLongerDuration;
+    private boolean mShowStopDot;
+    private boolean mIsDotAtRight;
+    private boolean mDotShowing;
+    private FrameLayout mFrameLayout;
+    private WindowManager mWindowManager;
+
     @Inject
     public RecordingService(RecordingController controller, @LongRunning Executor executor,
             UiEventLogger uiEventLogger, NotificationManager notificationManager,
@@ -91,6 +113,8 @@ public class RecordingService extends Service implements MediaRecorder.OnInfoLis
         mUiEventLogger = uiEventLogger;
         mNotificationManager = notificationManager;
         mUserContextTracker = userContextTracker;
+        mWindowManager = (WindowManager) userContextTracker.getUserContext()
+                .getSystemService(Context.WINDOW_SERVICE);
         mKeyguardDismissUtil = keyguardDismissUtil;
         mBinder = new RecordingServiceBinder();
     }
@@ -104,15 +128,18 @@ public class RecordingService extends Service implements MediaRecorder.OnInfoLis
      * @param audioSource   The ordinal value of the audio source
      *                      {@link com.android.systemui.screenrecord.ScreenRecordingAudioSource}
      */
-    public static Intent getStartIntent(Context context, int resultCode, int audioSource) {
+    public static Intent getStartIntent(Context context, int resultCode, int audioSource,
+            boolean showStopDot, boolean lowQuality, boolean longerDuration) {
         return new Intent(context, RecordingService.class)
                 .setAction(ACTION_START)
                 .putExtra(EXTRA_RESULT_CODE, resultCode)
-                .putExtra(EXTRA_AUDIO_SOURCE, audioSource);
+                .putExtra(EXTRA_AUDIO_SOURCE, audioSource)
+                .putExtra(EXTRA_SHOW_STOP_DOT, showStopDot)
+                .putExtra(EXTRA_LOW_QUALITY, lowQuality)
+                .putExtra(EXTRA_LONGER_DURATION, longerDuration);
     }
 
-    @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
+    @Override public int onStartCommand(Intent intent, int flags, int startId) {
         if (intent == null) {
             return Service.START_NOT_STICKY;
         }
@@ -126,6 +153,11 @@ public class RecordingService extends Service implements MediaRecorder.OnInfoLis
                 mAudioSource = ScreenRecordingAudioSource
                         .values()[intent.getIntExtra(EXTRA_AUDIO_SOURCE, 0)];
                 Log.d(TAG, "recording with audio source" + mAudioSource);
+                mShowStopDot = intent.getBooleanExtra(EXTRA_SHOW_STOP_DOT, false);
+                mLowQuality = intent.getBooleanExtra(EXTRA_LOW_QUALITY, false);
+                mLongerDuration = intent.getBooleanExtra(EXTRA_LONGER_DURATION, false);
+
+                setStopDotVisible(mShowStopDot);
 
                 mRecorder = new ScreenMediaRecorder(
                         mUserContextTracker.getUserContext(),
@@ -133,6 +165,8 @@ public class RecordingService extends Service implements MediaRecorder.OnInfoLis
                         mAudioSource,
                         this
                 );
+                setLowQuality(mLowQuality);
+                setLongerDuration(mLongerDuration);
 
                 if (startRecording()) {
                     updateState(true);
@@ -188,6 +222,23 @@ public class RecordingService extends Service implements MediaRecorder.OnInfoLis
                 if (mController != null) {
                     mController.createScreenRecordDialog(this, null).show();
                 }
+                break;
+            case ACTION_DELETE:
+                // Close quick shade
+                sendBroadcast(new Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS));
+
+                ContentResolver resolver = getContentResolver();
+                Uri uri = Uri.parse(intent.getStringExtra(EXTRA_PATH));
+                resolver.delete(uri, null, null);
+
+                Toast.makeText(
+                        this,
+                        R.string.screenrecord_delete_description,
+                        Toast.LENGTH_LONG).show();
+
+                // Remove notification
+                mNotificationManager.cancelAsUser(null, NOTIFICATION_VIEW_ID, currentUser);
+                Log.d(TAG, "Deleted recording " + uri);
                 break;
         }
         return Service.START_STICKY;
@@ -352,6 +403,16 @@ public class RecordingService extends Service implements MediaRecorder.OnInfoLis
                         PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE))
                 .build();
 
+        Notification.Action deleteAction = new Notification.Action.Builder(
+                Icon.createWithResource(this, R.drawable.ic_screenrecord),
+                getResources().getString(R.string.screenrecord_delete_label),
+                PendingIntent.getService(
+                        this,
+                        REQUEST_CODE,
+                        getDeleteIntent(this, uri.toString()),
+                        PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE))
+                .build();
+
         Bundle extras = new Bundle();
         extras.putString(Notification.EXTRA_SUBSTITUTE_APP_NAME,
                 getResources().getString(R.string.screenrecord_name));
@@ -366,6 +427,7 @@ public class RecordingService extends Service implements MediaRecorder.OnInfoLis
                         viewIntent,
                         PendingIntent.FLAG_IMMUTABLE))
                 .addAction(shareAction)
+                .addAction(deleteAction)
                 .setAutoCancel(true)
                 .addExtras(extras);
 
@@ -381,6 +443,7 @@ public class RecordingService extends Service implements MediaRecorder.OnInfoLis
     }
 
     private void stopRecording(int userId) {
+        setStopDotVisible(false);
         if (getRecorder() != null) {
             getRecorder().end();
             saveRecording(userId);
@@ -412,6 +475,98 @@ public class RecordingService extends Service implements MediaRecorder.OnInfoLis
         });
     }
 
+    private void setLowQuality(boolean turnOn) {
+        if (getRecorder() != null) {
+            getRecorder().setLowQuality(turnOn);
+        }
+    }
+
+    private void setLongerDuration(boolean longer) {
+        if (getRecorder() != null) {
+            getRecorder().setLongerDuration(longer);
+        }
+    }
+
+    private void setStopDotVisible(boolean turnOn) {
+        if (turnOn) {
+            showDot();
+        } else if (mDotShowing) {
+            stopDot();
+        }
+    }
+
+    private void showDot() {
+        mDotShowing = true;
+        mIsDotAtRight = true;
+        final int size = (int) (this.getResources()
+                .getDimensionPixelSize(R.dimen.screenrecord_dot_size));
+        WindowManager.LayoutParams params = new WindowManager.LayoutParams(
+                WindowManager.LayoutParams.WRAP_CONTENT,
+                WindowManager.LayoutParams.WRAP_CONTENT,
+                WindowManager.LayoutParams.TYPE_PHONE,
+                WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE // don't get softkey inputs
+                | WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL, // allow outside inputs
+                PixelFormat.TRANSLUCENT);
+        params.gravity = Gravity.TOP | Gravity.RIGHT;
+        params.width = size;
+        params.height = size;
+
+        mFrameLayout = new FrameLayout(this);
+
+        mWindowManager.addView(mFrameLayout, params);
+        final LayoutInflater inflater =
+                (LayoutInflater) mUserContextTracker.getUserContext()
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater.inflate(R.layout.screenrecord_dot, mFrameLayout);
+
+        final ImageView dot = (ImageView) mFrameLayout.findViewById(R.id.dot);
+        dot.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                try {
+                    getStopPendingIntent().send();
+                } catch (PendingIntent.CanceledException e) {}
+            }
+        });
+
+        dot.setOnLongClickListener(new View.OnLongClickListener() {
+            public boolean onLongClick(View v) {
+                dot.setAnimation(null);
+                WindowManager.LayoutParams params =
+                        (WindowManager.LayoutParams) mFrameLayout.getLayoutParams();
+                params.gravity = Gravity.TOP | (mIsDotAtRight? Gravity.LEFT : Gravity.RIGHT);
+                mIsDotAtRight = !mIsDotAtRight;
+                mWindowManager.updateViewLayout(mFrameLayout, params);
+                dot.startAnimation(getDotAnimation());
+                return true;
+            }
+        });
+
+        dot.startAnimation(getDotAnimation());
+    }
+
+    private PendingIntent getStopPendingIntent() {
+        return PendingIntent.getService(this, REQUEST_CODE, getStopIntent(this),
+                                PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+    }
+
+    private void stopDot() {
+        mDotShowing = false;
+        final ImageView dot = (ImageView) mFrameLayout.findViewById(R.id.dot);
+        if (dot != null) {
+            dot.setAnimation(null);
+            mWindowManager.removeView(mFrameLayout);
+        }
+    }
+
+    private Animation getDotAnimation() {
+        Animation anim = new AlphaAnimation(0.0f, 1.0f);
+        anim.setDuration(500);
+        anim.setStartOffset(100);
+        anim.setRepeatMode(Animation.REVERSE);
+        anim.setRepeatCount(Animation.INFINITE);
+        return anim;
+    }
+
     /**
      * Get an intent to stop the recording service.
      * @param context Context from the requesting activity
@@ -434,6 +589,11 @@ public class RecordingService extends Service implements MediaRecorder.OnInfoLis
 
     private static Intent getShareIntent(Context context, String path) {
         return new Intent(context, RecordingService.class).setAction(ACTION_SHARE)
+                .putExtra(EXTRA_PATH, path);
+    }
+
+    private static Intent getDeleteIntent(Context context, String path) {
+        return new Intent(context, RecordingService.class).setAction(ACTION_DELETE)
                 .putExtra(EXTRA_PATH, path);
     }
 

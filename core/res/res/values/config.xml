@@ -3548,7 +3548,7 @@
 
     <!-- Controls whether hints for gestural navigation are shown when the device is setup.
          This should only be set when the device has gestural navigation enabled by default. -->
-    <bool name="config_showGesturalNavigationHints">false</bool>
+    <bool name="config_showGesturalNavigationHints">true</bool>
 
     <!-- Controls the free snap mode for the docked stack divider. In this mode, the divider can be
          snapped to any position between the first target and the last target. -->
@@ -5317,4 +5317,12 @@
     </string>
 
     <integer name="config_chooser_max_targets_per_row">4</integer>
+
+    <!-- List of system components which are allowed to receive ServiceState entries in an
+         un-sanitized form, even if the location toggle is off. This is intended ONLY for system
+         components, such as the telephony stack, which require access to the full ServiceState for
+         tasks such as network registration. -->
+    <string-array name="config_serviceStateLocationAllowedPackages">
+        <item>"com.android.phone"</item>
+    </string-array>
 </resources>
