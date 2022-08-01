@@ -63,10 +63,4 @@
     <string name="screenrecord_longer_timeout_switch_label">Batas ukuran file lebih besar\nBatasi ukuran perekaman hingga 15GB</string>
     <!-- Face Unlock -->
     <string name="face_unlock_recognizing">Mengenali wajah...</string>
-    <!-- CPUInfo tile -->
-    <string name="quick_settings_cpuinfo_label">Info CPU</string>
-    <string name="accessibility_quick_settings_cpuinfo_off">Info CPU nonaktif</string>
-    <string name="accessibility_quick_settings_cpuinfo_on">Info CPU aktif</string>
-    <string name="accessibility_quick_settings_cpuinfo_changed_off">Info CPU dinonaktifkan</string>
-    <string name="accessibility_quick_settings_cpuinfo_changed_on">Info CPU diaktifkan</string>
 </resources>
