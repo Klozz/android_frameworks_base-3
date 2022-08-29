@@ -21,9 +21,20 @@
     <!-- Custom QS tiles -->
     <!-- PowerShare QS tile -->
     <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Caféine</string>
     <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Adaptation de la lumière</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Adaptation de la luminosité désactivée.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Affichage en mode veille activé.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Adaptation de la luminosité désactivée.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Affichage en mode veille activé.</string>
     <!-- USB tethering QS tile -->
     <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Notifications flottantes</string>
+    <string name="accessibility_quick_settings_heads_up_off">Notifications flottantes désactivées.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Notifications flottantes activées.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Notifications flottantes désactivées.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Notifications flottantes activées.</string>
     <!-- Data usage info in QS footer -->
     <!-- Smart Pixels QS Tile -->
     <!-- Screen record delete action -->
