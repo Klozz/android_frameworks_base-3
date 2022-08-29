@@ -21,11 +21,25 @@
     <!-- Custom QS tiles -->
     <!-- PowerShare QS tile -->
     <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Kofeina</string>
     <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Ambient display</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Ambient display wył.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Ambient display wł.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Ambient display wyłączony.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Ambient display włączony.</string>
     <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Tethering USB</string>
     <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Wyskakujące powiadomienia</string>
+    <string name="accessibility_quick_settings_heads_up_off">Wyskakujące powiadomienia wył.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Wyskakujące powiadomienia wł.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Wyskakujące powiadomienia wyłączone.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Wyskakujące powiadomienia włączone.</string>
     <!-- Data usage info in QS footer -->
     <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">Inteligentne piksele</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Automatyczne włączanie Inteligentnych pikseli</string>
     <!-- Screen record delete action -->
     <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
     <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
