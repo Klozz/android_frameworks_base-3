@@ -17,15 +17,37 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Face Unlock -->
     <!-- Power Menu -->
+    <string name="global_action_reboot">Перезагрузка</string>
+    <string name="global_action_reboot_more">Перезагрузка\u2026</string>
+    <string name="global_action_reboot_sub">Система</string>
+    <string name="global_action_reboot_recovery">Рекавери</string>
+    <string name="global_action_reboot_bootloader">Загрузчик</string>
+    <string name="global_action_settings">Настройки</string>
     <!-- Title of statusbar tuner -->
     <!-- Custom QS tiles -->
     <!-- PowerShare QS tile -->
     <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Запрет сна</string>
+    <string name="accessibility_quick_settings_caffeine_off">Запрет сна выкл</string>
+    <string name="accessibility_quick_settings_caffeine_on">Запрет сна вкл</string>
     <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Активный экран</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Активный экран выключен.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Активный экран выключен.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Ambient Display отключен.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Ambient Display включен.</string>
     <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB-модем</string>
     <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Всплывающие уведомления</string>
+    <string name="accessibility_quick_settings_heads_up_off">Всплывающие уведомления выключены.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Всплывающие уведомления включены.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Всплывающие уведомления выключены.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Всплывающие уведомления включены.</string>
     <!-- Data usage info in QS footer -->
     <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">Умные пиксели</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Автоматическое включение Умных Пикселей</string>
     <!-- Screen record delete action -->
     <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
     <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
