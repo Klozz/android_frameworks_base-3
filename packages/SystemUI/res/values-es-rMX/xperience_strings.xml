@@ -43,15 +43,15 @@
     <!-- Shows when people have clicked on the custom lockscreen shortcut [CHAR LIMIT=60] -->
     <string name="custom_hint">Desliza desde el icono para abrir</string>
     <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
-    <string name="keyguard_indication_dash_charging_time" formatted="false"><xliff:g id="percentage">%2$s</xliff:g> • Carga Dash (<xliff:g id="charging_time_left" example="4 horas y 2 minutos">%s</xliff:g> hasta 100%)</string>
+    <string name="keyguard_indication_dash_charging_time" formatted="false"><xliff:g id="percentage">%2$s</xliff:g> • Dash Charging (<xliff:g id="charging_time_left" example="4 horas y 2 minutos">%s</xliff:g> hasta completar)</string>
     <!-- Indication on the keyguard that is shown when the device is charging with a Turbo charger. Should match keyguard_plugged_in_chargeturbo [CHAR LIMIT=40]-->
     <string name="keyguard_indication_chargeturbo_time" formatted="false"><xliff:g id="percentage">%2$s</xliff:g> • ChargeTurbo (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> hasta completar)</string>
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">Notificaciones emergentes</string>
     <string name="accessibility_quick_settings_heads_up_off">Notificaciones emergentes desactivadas.</string>
     <string name="accessibility_quick_settings_heads_up_on">Notificaciones emergentes activadas.</string>
-    <string name="accessibility_quick_settings_heads_up_changed_off">Notificaciones emergentes desactivadas.</string>
-    <string name="accessibility_quick_settings_heads_up_changed_on">Se han activado las notificaciones flotantes.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Desactivando notificaciones emergentes.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Activando notificaciones emergentes.</string>
     <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
     <!-- Screen record -->
     <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
