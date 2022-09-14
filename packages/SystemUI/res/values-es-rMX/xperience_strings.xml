@@ -39,4 +39,5 @@
     <!-- Title of statusbar tuner -->
     <string name="status_bar_icons">Iconos de la barra de estado</string>
     <!-- Name of the VoLTE/VoWiFi icon. -->
+    <!-- Name of the roaming status bar icon. -->
 </resources>
