@@ -37,4 +37,5 @@
     <!-- Title of statusbar tuner -->
     <string name="status_bar_icons">Ikon bilah status</string>
     <!-- Name of the VoLTE/VoWiFi icon. -->
+    <!-- Name of the roaming status bar icon. -->
 </resources>
