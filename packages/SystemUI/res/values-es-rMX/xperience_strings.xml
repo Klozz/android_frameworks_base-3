@@ -41,4 +41,5 @@
     <!-- Name of the VoLTE/VoWiFi icon. -->
     <!-- Name of the roaming status bar icon. -->
     <string name="status_bar_roaming">Indicador de itinerancia</string>
+    <!-- PowerShare QS tile -->
 </resources>
