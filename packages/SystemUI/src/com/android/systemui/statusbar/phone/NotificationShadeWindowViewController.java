@@ -154,9 +154,9 @@ public class NotificationShadeWindowViewController {
             AmbientDisplayConfiguration configuration =
                     new AmbientDisplayConfiguration(mView.getContext());
             switch (key) {
-/*                case Settings.Secure.DOUBLE_TAP_TO_WAKE:
+                case Settings.Secure.DOUBLE_TAP_TO_WAKE:
                     mDoubleTapEnabledNative = TunerService.parseIntegerSwitch(newValue, false);
-                    break;*/
+                    break;
                 case Settings.Secure.DOZE_DOUBLE_TAP_GESTURE:
                     mDoubleTapEnabled = configuration.doubleTapGestureEnabled(
                             UserHandle.USER_CURRENT);
@@ -164,17 +164,12 @@ public class NotificationShadeWindowViewController {
                 case Settings.Secure.DOZE_TAP_SCREEN_GESTURE:
                     mSingleTapEnabled = configuration.tapGestureEnabled(UserHandle.USER_CURRENT);
                     break;
-                case Settings.Secure.DOUBLE_TAP_TO_WAKE:
-                    mDoubleTapEnabledNative = Settings.Secure.getIntForUser(mView.getContext().getContentResolver(),
-                            Settings.Secure.DOUBLE_TAP_TO_WAKE, 1, UserHandle.USER_CURRENT) == 1;
-                    break;
             }
         };
         mTunerService.addTunable(tunable,
                 Settings.Secure.DOUBLE_TAP_TO_WAKE,
                 Settings.Secure.DOZE_DOUBLE_TAP_GESTURE,
-                Settings.Secure.DOZE_TAP_SCREEN_GESTURE,
-                Settings.Secure.DOUBLE_TAP_TO_WAKE);
+                Settings.Secure.DOZE_TAP_SCREEN_GESTURE);
 
         GestureDetector.SimpleOnGestureListener gestureListener =
                 new GestureDetector.SimpleOnGestureListener() {
@@ -190,7 +185,7 @@ public class NotificationShadeWindowViewController {
 
                     @Override
                     public boolean onDoubleTap(MotionEvent e) {
-                        if (mDoubleTapEnabled || mSingleTapEnabled || mDoubleTapEnabledNative) {
+                        if (mDoubleTapEnabled || mSingleTapEnabled) {
                             mService.wakeUpIfDozing(
                                     SystemClock.uptimeMillis(), mView, "DOUBLE_TAP");
                             return true;
@@ -510,7 +505,7 @@ public class NotificationShadeWindowViewController {
         boolean isDoubleTapToWakeEnabled = Settings.Secure.getIntForUser(mView.getContext().getContentResolver(),
                 Settings.Secure.DOUBLE_TAP_TO_WAKE, 1, UserHandle.USER_CURRENT) == 1;
         boolean isDoubleTapNoLandscapeEnabled = Settings.System.getIntForUser(mView.getContext().getContentResolver(),
-                Settings.System.DOUBLE_TAP_NO_LANDSCAPE, 0, UserHandle.USER_CURRENT) == 1;
+                Settings.System.DOUBLE_TAP_NO_LANDSCAPE, 1, UserHandle.USER_CURRENT) == 1;
         if (mNotificationPanelViewController != null) {
             mNotificationPanelViewController.setLockscreenDoubleTapToSleep(isDoubleTapToWakeEnabled);
             mNotificationPanelViewController.setSbDoubleTapToSleep(isDoubleTapToWakeEnabled);
