@@ -34,4 +34,5 @@
     <string name="status_bar_icons">Durum çubuğu simgeleri</string>
     <!-- Name of the VoLTE/VoWiFi icon. -->
     <!-- Name of the roaming status bar icon. -->
+    <!-- PowerShare QS tile -->
 </resources>
