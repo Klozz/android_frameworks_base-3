@@ -16,5 +16,6 @@
 -->
 <resources>
     <!-- Face unlock -->
+    <string name="face_unlock_disabled_idle">Yüz ile kilit açma hareketsizlk nedeniyle devre dışı bırakıldı</string>
     <!-- Whether to cancel fingerprint operation if not idle -->
 </resources>
