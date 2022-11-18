@@ -49,4 +49,7 @@
     <string name="usage_data">использовано сегодня</string>
     <string name="usage_data_default_suffix">Данные</string>
     <string name="usage_wifi_default_suffix">Wi-Fi</string>
+    <!-- Bluetooth dialog -->
+    <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Распознавание лица...</string>
 </resources>
