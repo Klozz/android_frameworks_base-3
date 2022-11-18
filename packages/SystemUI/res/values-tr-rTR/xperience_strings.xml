@@ -49,4 +49,7 @@
     <string name="usage_data">bugün kullanılan</string>
     <string name="usage_data_default_suffix">Veri</string>
     <string name="usage_wifi_default_suffix">Kablosuz ağ</string>
+    <!-- Bluetooth dialog -->
+    <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Yüz algılanıyor...</string>
 </resources>
