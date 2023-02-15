@@ -65,4 +65,8 @@
     <string name="qs_data_switch_label">Cambiar tarjeta de datos</string>
     <string name="qs_data_switch_toast_0">Actualmente no se ha insertado ninguna tarjeta SIM</string>
     <string name="qs_data_switch_toast_1">Actualmente solo se ha insertado una tarjeta SIM</string>
+    <string name="qs_data_switch_text_1">SIM 1</string>
+    <string name="qs_data_switch_text_2">SIM 2</string>
+    <string name="qs_data_switch_changed_1">Tarjeta de datos cambiada a SIM 1.</string>
+    <string name="qs_data_switch_changed_2">Tarjeta de datos cambiada a SIM 2.</string>
 </resources>
