@@ -559,6 +559,9 @@ final class DisplayPowerController implements AutomaticBrightnessController.Call
 
         final Resources resources = context.getResources();
 
+        mDisplayDeviceConfig = logicalDisplay.getPrimaryDisplayDeviceLocked()
+                .getDisplayDeviceConfig();
+
         // DOZE AND DIM SETTINGS
         mScreenBrightnessDozeConfig = clampAbsoluteBrightness(
                 pm.getBrightnessConstraint(PowerManager.BRIGHTNESS_CONSTRAINT_TYPE_DOZE));
@@ -582,9 +585,6 @@ final class DisplayPowerController implements AutomaticBrightnessController.Call
 
         mAllowAutoBrightnessWhileDozingConfig = resources.getBoolean(
                 com.android.internal.R.bool.config_allowAutoBrightnessWhileDozing);
-
-        mDisplayDeviceConfig = logicalDisplay.getPrimaryDisplayDeviceLocked()
-                .getDisplayDeviceConfig();
 
         loadBrightnessRampRates();
         mSkipScreenOnBrightnessRamp = resources.getBoolean(
