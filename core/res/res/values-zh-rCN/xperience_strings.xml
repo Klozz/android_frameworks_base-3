@@ -16,5 +16,6 @@
 -->
 <resources>
     <!-- Face unlock -->
+    <string name="face_unlock_disabled_idle">由于处于非活动状态，面部解锁已禁用</string>
     <!-- Whether to cancel fingerprint operation if not idle -->
 </resources>
