@@ -16,7 +16,14 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Global actions -->
+    <string name="reboot_to_fastboot_title">重启至fastboot模式</string>
+    <string name="reboot_to_fastboot_message">正在重启至 fastboot模式\u2026</string>
     <!-- Alert slider proc nodes paths. -->
     <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">长按电源键以解锁</string>
     <!-- Pocket Lock -->
+    <string name="pocket_view_title">防误触模式已打开</string>
+    <string name="pocket_view_title_cancel">要使用您的手机：</string>
+    <string name="pocket_view_top_tag_cancel">不要覆盖您手机的蓝色区域，并保持清洁</string>
+    <string name="pocket_view_top_tag_cancel2">长按电源键强制退出防误触模式</string>
 </resources>
