@@ -16,6 +16,9 @@
 -->
 <resources>
     <!-- Face unlock -->
+    <string name="face_unlock_disabled_idle">由于处于非活动状态，面部解锁已禁用</string>
     <!-- Whether to cancel fingerprint operation if not idle -->
     <!-- Global actions -->
+    <string name="reboot_to_fastboot_title">重启至fastboot模式</string>
+    <string name="reboot_to_fastboot_message">正在重启至 fastboot模式\u2026</string>
 </resources>
