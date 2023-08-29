@@ -16,7 +16,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Global actions -->
+    <string name="reboot_to_bootloader_title">Reiniciar para o Bootloader</string>
+    <string name="reboot_to_bootloader_message">Reiniciando para o bootloader\u2026</string>
+    <string name="reboot_to_recovery_title">Reiniciar em Modo de Recuperação</string>
+    <string name="reboot_to_recovery_message">Reiniciando para a recuperação\u2026</string>
+    <string name="reboot_to_fastboot_title">Reiniciar fastboot</string>
+    <string name="reboot_to_fastboot_message">Reiniciando para o fastboot\u2026</string>
+    <string name="reboot_system_title">Reiniciar o sistema</string>
+    <string name="reboot_system_message">Reiniciando sistema\u2026</string>
     <!-- Alert slider proc nodes paths. -->
     <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">Segure o botão de ligar pra desbloquear</string>
     <!-- Pocket Lock -->
+    <string name="pocket_view_title">Modo bolso está ativado</string>
+    <string name="pocket_view_title_cancel">Ativar seu telefone:</string>
+    <string name="pocket_view_top_tag_cancel">Verifique se a área azul do seu telefone está livre de qualquer obstrução, e limpe qualquer sujeira ou pó.</string>
+    <string name="pocket_view_top_tag_cancel2">Pressione e segure o botão liga/desliga para forçar a saída do modo de bolso.</string>
 </resources>
