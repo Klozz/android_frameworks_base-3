@@ -16,12 +16,27 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Rozpoznawanie twarzy...</string>
     <!-- Power Menu -->
+    <string name="global_action_reboot">Restart</string>
+    <string name="global_action_reboot_more">Restartowanie\u2026</string>
+    <string name="global_action_reboot_sub">System</string>
+    <string name="global_action_reboot_recovery">Recovery</string>
+    <string name="global_action_reboot_bootloader">Bootloader</string>
+    <string name="global_action_reboot_fastboot">Fastboot</string>
+    <string name="global_action_settings">Ustawienia</string>
     <!-- Title of statusbar tuner -->
+    <string name="status_bar_icons">Ikony paska stanu</string>
     <!-- Custom QS tiles -->
     <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Ładowanie zwrotne</string>
+    <string name="quick_settings_powershare_off_powersave_label">Ładowanie zwrotne wyłączone\nOszczędzanie baterii</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Ładowanie zwrotne wyłączone\nNiski poziom baterii</string>
+    <string name="quick_settings_powershare_enabled_label">Ładowanie zwrotne jest włączone</string>
     <!-- Caffeine QS Tile -->
     <string name="quick_settings_caffeine_label">Kofeina</string>
+    <string name="accessibility_quick_settings_caffeine_off">Kofeina wył</string>
+    <string name="accessibility_quick_settings_caffeine_on">Kofeina wł</string>
     <!-- Ambient display QS tile -->
     <string name="quick_settings_ambient_display_label">Ambient display</string>
     <string name="accessibility_quick_settings_ambient_display_off">Ambient display wył.</string>
@@ -37,12 +52,23 @@
     <string name="accessibility_quick_settings_heads_up_changed_off">Wyskakujące powiadomienia wyłączone.</string>
     <string name="accessibility_quick_settings_heads_up_changed_on">Wyskakujące powiadomienia włączone.</string>
     <!-- Data usage info in QS footer -->
+    <string name="usage_data">użyto dziś</string>
+    <string name="usage_data_default_suffix">Dane</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
     <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">Inteligentne piksele</string>
     <string name="quick_settings_smart_pixels_on_power_save">Automatyczne włączanie Inteligentnych pikseli</string>
     <!-- Screen record delete action -->
     <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <string name="screenrecord_delete_label">Usuń</string>
     <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">Usunięto nagranie ekranu</string>
     <!-- Screenrecord QS tile -->
+    <string name="screenrecord_stopdot_label">Pokaż kropkę do zatrzymania nagrywania\nPrzytrzymaj, aby ją przenieść</string>
+    <string name="screenrecord_lowquality_label">Niższa jakość, mniejszy rozmiar pliku</string>
+    <string name="screenrecord_longer_timeout_switch_label">Większy limit rozmiaru pliku\nOgranicz rozmiar nagrywania do 15GB</string>
     <!-- DC Dimming -->
+    <string name="quick_settings_dc_dimming_label">Redukcja migotania</string>
+    <string name="quick_settings_dc_brightness_mode">Tryb jasności</string>
+    <string name="quick_settings_dc_full_auto">Tryb automatyczny</string>
 </resources>
