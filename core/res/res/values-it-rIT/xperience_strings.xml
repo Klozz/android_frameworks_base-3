@@ -16,5 +16,6 @@
 -->
 <resources>
     <!-- Face unlock -->
+    <string name="face_unlock_disabled_idle">Sblocco viso disabilitato a causa di inattività</string>
     <!-- Whether to cancel fingerprint operation if not idle -->
 </resources>
