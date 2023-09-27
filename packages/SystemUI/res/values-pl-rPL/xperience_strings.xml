@@ -23,12 +23,27 @@
     <string name="accessibility_quick_settings_caffeine_off">Kofeina wył.</string>
     <string name="accessibility_quick_settings_caffeine_on">Kofeina wł.</string>
     <!-- Power Menu -->
+    <string name="global_action_reboot">Restart</string>
+    <string name="global_action_reboot_more">Restartowanie\u2026</string>
+    <string name="global_action_reboot_sub">System</string>
+    <string name="global_action_reboot_recovery">Recovery</string>
+    <string name="global_action_reboot_bootloader">Bootloader</string>
+    <string name="global_action_settings">Ustawienia</string>
     <!-- DC Dimming -->
+    <string name="quick_settings_dc_dimming_label">Redukcja migotania</string>
     <!-- Screenshot delete action -->
     <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
+    <string name="screenshot_delete_label">Usuń</string>
     <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
+    <string name="screenshot_delete_description">Usuń zrzut ekranu</string>
     <!-- Title of statusbar tuner -->
+    <string name="status_bar_icons">Ikony paska stanu</string>
     <!-- Name of the VoLTE/VoWiFi icon. -->
     <!-- Name of the roaming status bar icon. -->
+    <string name="status_bar_roaming">Ikona roamingu</string>
     <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Ładowanie zwrotne</string>
+    <string name="quick_settings_powershare_off_powersave_label">Ładowanie zwrotne wyłączone\nOszczędzanie baterii</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Ładowanie zwrotne wyłączone\nNiski poziom baterii</string>
+    <string name="quick_settings_powershare_enabled_label">Ładowanie zwrotne jest włączone</string>
 </resources>
