@@ -16,5 +16,6 @@
 -->
 <resources>
     <!-- Face unlock -->
+    <string name="face_unlock_disabled_idle">Разблокировка по лицу отключена из-за бездействия</string>
     <!-- Whether to cancel fingerprint operation if not idle -->
 </resources>
