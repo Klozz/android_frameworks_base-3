@@ -16,5 +16,6 @@
 -->
 <resources>
     <!-- Face unlock -->
+    <string name="face_unlock_disabled_idle">Az arcalapú feloldás inaktivitás miatt letiltásra került</string>
     <!-- Whether to cancel fingerprint operation if not idle -->
 </resources>
