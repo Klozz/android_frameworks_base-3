@@ -16,19 +16,59 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Распознавание лица...</string>
     <!-- Power Menu -->
+    <string name="global_action_reboot">Перезагрузка</string>
+    <string name="global_action_reboot_more">Перезагрузка\u2026</string>
+    <string name="global_action_reboot_sub">Система</string>
+    <string name="global_action_reboot_recovery">Рекавери</string>
+    <string name="global_action_reboot_bootloader">Загрузчик</string>
+    <string name="global_action_reboot_fastboot">Fastboot</string>
+    <string name="global_action_settings">Настройки</string>
     <!-- Title of statusbar tuner -->
+    <string name="status_bar_icons">Значки строки состояния</string>
     <!-- Custom QS tiles -->
     <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Индикатор батареи</string>
+    <string name="quick_settings_powershare_off_powersave_label">PowerShare выкл.\nЭкономия заряда батареи</string>
+    <string name="quick_settings_powershare_off_low_battery_label">PowerShare выкл.\nНизкий заряд батареи</string>
+    <string name="quick_settings_powershare_enabled_label">Режим энергосбережения включен</string>
     <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Запрет сна</string>
+    <string name="accessibility_quick_settings_caffeine_off">Запрет сна выкл</string>
+    <string name="accessibility_quick_settings_caffeine_on">Запрет сна вкл</string>
     <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Активный экран</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Активный экран выключен.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Активный экран выключен.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Ambient Display отключен.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Ambient Display включен.</string>
     <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB-модем</string>
     <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Всплывающие уведомления</string>
+    <string name="accessibility_quick_settings_heads_up_off">Всплывающие уведомления выключены.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Всплывающие уведомления включены.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Всплывающие уведомления выключены.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Всплывающие уведомления включены.</string>
     <!-- Data usage info in QS footer -->
+    <string name="usage_data">использовано сегодня</string>
+    <string name="usage_data_default_suffix">Данные</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
     <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">Умные пиксели</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Автоматическое включение Умных Пикселей</string>
     <!-- Screen record delete action -->
     <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <string name="screenrecord_delete_label">Удалить</string>
     <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">Запись экрана удалена</string>
     <!-- Screenrecord QS tile -->
+    <string name="screenrecord_stopdot_label">Показывать кнопку остановки\nУдерживайте для перемещения</string>
+    <string name="screenrecord_lowquality_label">Более низкое качество для меньшего размера файла</string>
+    <string name="screenrecord_longer_timeout_switch_label">Больший размер файла\nОграничить размер записи до 15 Гб</string>
     <!-- DC Dimming -->
+    <string name="quick_settings_dc_dimming_label">DC Dimming</string>
+    <string name="quick_settings_dc_brightness_mode">Уровень яркости</string>
+    <string name="quick_settings_dc_full_auto">Автоматический режим</string>
 </resources>

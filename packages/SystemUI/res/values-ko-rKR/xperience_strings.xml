@@ -21,11 +21,25 @@
     <!-- Custom QS tiles -->
     <!-- PowerShare QS tile -->
     <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">카페인</string>
     <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">절전 모드 자동 해제</string>
+    <string name="accessibility_quick_settings_ambient_display_off">절전 모드 자동 해제가 꺼짐.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">절전 모드 자동 해제가 켜짐.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">절전 모드 자동 해제가 꺼졌습니다.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">앰비언트 디스플레이 켜기</string>
     <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB 테더링</string>
     <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">헤드 업</string>
+    <string name="accessibility_quick_settings_heads_up_off">피킹 알람 끔.</string>
+    <string name="accessibility_quick_settings_heads_up_on">헤드업 알림이 켜짐.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">헤드 업 알림 꺼짐</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">헤드 업 켜짐.</string>
     <!-- Data usage info in QS footer -->
     <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">스마트 픽셀</string>
+    <string name="quick_settings_smart_pixels_on_power_save">자동 가능 스마트 픽셀</string>
     <!-- Screen record delete action -->
     <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
     <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
