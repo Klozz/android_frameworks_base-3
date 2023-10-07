@@ -16,19 +16,51 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Power Menu -->
+    <string name="global_action_reboot">Yeniden Başlat</string>
+    <string name="global_action_reboot_more">Yeniden başlatılıyor\u2026</string>
+    <string name="global_action_reboot_sub">Sistem</string>
+    <string name="global_action_reboot_recovery">Kurtarma Modu</string>
+    <string name="global_action_reboot_bootloader">Ön Yükleyici (Bootloader)</string>
+    <string name="global_action_reboot_fastboot">Fastboot</string>
+    <string name="global_action_settings">Ayarlar</string>
     <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Kafein</string>
+    <string name="accessibility_quick_settings_caffeine_off">Kafein modu kapalı</string>
+    <string name="accessibility_quick_settings_caffeine_on">Kafein modu açık</string>
     <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Ortam ekranı</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Ortam ekranı kapalı.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Ortam ekranı açık.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Ortam ekranı kapatıldı.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Ortam ekranı açıldı.</string>
     <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB internet paylaşımı</string>
     <!-- Volte icon tuner -->
     <!-- SystemUI Tuner -->
+    <string name="statusbar_items_title">Durum çubuğu simgeleri</string>
+    <string name="lockscreen_default">Varsayılan</string>
+    <string name="lockscreen_hidden">Yok</string>
     <!-- Shows when people have clicked on the custom lockscreen shortcut [CHAR LIMIT=60] -->
+    <string name="custom_hint">Başlatmak için simgeden kaydırın</string>
     <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time" formatted="false"><xliff:g id="percentage">%2$s</xliff:g> • Dash şarj oluyor (tam dolmasına <xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> kaldı)</string>
     <!-- Indication on the keyguard that is shown when the device is charging with a Turbo charger. Should match keyguard_plugged_in_chargeturbo [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_chargeturbo_time" formatted="false"><xliff:g id="Percentage">%2$s</xliff:g> • Şarj oluyor (dolmasına <xliff:g id="Charging_TIME_LEFT">%s</xliff:g> kaldı)</string>
     <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Bildirim pencereleri</string>
+    <string name="accessibility_quick_settings_heads_up_off">Bildirim pencereleri kapalı.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Bildirim pencereleri açık.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Bildirim pencereleri kapatıldı.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Bildirim pencereleri açıldı.</string>
     <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
     <!-- Screen record -->
     <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <string name="screenrecord_delete_label">Sil</string>
     <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">Ekran kaydı silindi</string>
+    <string name="screenrecord_stopdot_label">Durma noktasını göster\nTaşımak için uzun basın</string>
+    <string name="screenrecord_lowquality_label">Daha küçük dosya boyutu için daha düşük kalite</string>
+    <string name="screenrecord_longer_timeout_switch_label">Daha büyük dosya boyutu sınırı\nKayıt boyutunu 15 Gb ile sınırlayın</string>
     <!-- Face Unlock -->
-    <!-- CPUInfo tile -->
+    <string name="face_unlock_recognizing">Yüz algılanıyor...</string>
 </resources>
