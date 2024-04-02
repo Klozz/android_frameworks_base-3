@@ -19,24 +19,65 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Custom QS tiles -->
     <!-- Caffeine QS tile -->
+    <string name="accessibility_quick_settings_caffeine_off">Đã tắt Cafein.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Đã bật Cafein.</string>
     <!-- Power Menu -->
     <!-- DC Dimming -->
+    <string name="quick_settings_dc_dimming_label">DC - Làm mờ</string>
     <!-- Screenshot delete action -->
     <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
+    <string name="screenshot_delete_label">Xoá</string>
     <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
+    <string name="screenshot_delete_description">Xóa ảnh chụp màn hình</string>
     <!-- Title of statusbar tuner -->
+    <string name="status_bar_icons">Biểu tượng thanh trạng thái</string>
     <!-- Name of the roaming status bar icon. -->
+    <string name="status_bar_roaming">Chỉ báo chuyển vùng</string>
     <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Sạc ngược không dây</string>
+    <string name="quick_settings_powershare_off_powersave_label">Tắt Chia Sẻ Pin\nTiết kiệm pin</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Sạc không dây tắt\nPin quá yếu</string>
+    <string name="quick_settings_powershare_enabled_label">Chia Sẻ Pin được bật</string>
     <!-- Data usage info in QS footer -->
+    <string name="usage_data">đã dùng hôm nay</string>
+    <string name="usage_data_default_suffix">Dữ liệu</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
     <!-- Bluetooth dialog -->
+    <string name="turn_on_bluetooth">Sử dụng Bluetooth</string>
+    <string name="bluetooth_is_off">Bluetooth đang tắt</string>
+    <string name="tap_a_device_to_connect">Nhấn vào một thiết bị để kết nối</string>
     <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Đang nhận diện khuôn mặt...</string>
     <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_dash_charging_time">Đang sạc nhanh Dash</string>
+    <string name="keyguard_plugged_in_dash_charging">Đang sạc nhanh</string>
     <!-- Indication on the keyguard that is shown when the device is charging with a warp charger. Should match keyguard_plugged_in_warp_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_warp_charging_time">Đang sạc nhanh Warp</string>
+    <string name="keyguard_plugged_in_warp_charging">Đang sạc nhanh Warp</string>
     <!-- Indication on the keyguard that is shown when the device is charging with a VOOC charger. Should match keyguard_plugged_in_vooc_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_vooc_charging_time">Đang sạc nhanh VOOC</string>
+    <string name="keyguard_plugged_in_vooc_charging">Đang sạc nhanh VOOC</string>
     <!-- Indication on the keyguard that is shown when the device is charging with a turbo power charger. Should match keyguard_plugged_in_turbo_power_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_mi_turbo_charger_time">Đang sạc nhanh Turbo</string>
+    <string name="keyguard_plugged_in_mi_turbo_charger">Sạc nhanh Turbo</string>
     <!-- Indication on the keyguard that is shown when the device is charging with a turbo power charger. Should match keyguard_plugged_in_turbo_power_charging [CHAR LIMIT=40]-->
+    <string name="keyguard_indication_turbo_power_time">Đang sạc nhanh Turbo</string>
+    <string name="keyguard_plugged_in_turbo_charging">Đang sạc nhanh Turbo</string>
     <!-- QuickSettings: InternetDialog: Summary for how many devices are connected to the hotspot [CHAR LIMIT=NONE] -->
+    <plurals name="quick_settings_internet_hotspot_summary_num_devices">
+        <item quantity="other">%d thiết bị đã kết nối</item>
+    </plurals>
     <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Thông báo nổi</string>
+    <string name="accessibility_quick_settings_heads_up_off">Tắt thông báo nổi.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Bật thông báo nổi.</string>
     <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Chia sẻ kết nối qua USB</string>
     <!-- Compass QS Tile -->
+    <string name="quick_settings_compass_label">La bàn</string>
+    <string name="quick_settings_compass_init">Đang khởi tạo\u2026</string>
+    <string name="accessibility_quick_settings_compass_off">La bàn tắt</string>
+    <string name="accessibility_quick_settings_compass_on">La bàn bật</string>
+    <string name="accessibility_quick_settings_compass_changed_off">La bàn đã tắt</string>
+    <string name="accessibility_quick_settings_compass_changed_on">La bàn đã bật</string>
 </resources>
