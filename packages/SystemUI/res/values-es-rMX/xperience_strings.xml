@@ -17,9 +17,9 @@
 <resources>
 
     <!-- Advanced Reboot -->
-    <string name=""/>
-    <string name=""/>
-    <string name=""/>
-    <string name=""/>
+    <string name="">Avanzado</string>
+    <string name="">Modo Recovery</string>
+    <string name="">Bootloader</string>
+    <string name="">Interfaz de Usuario</string>
 
 </resources>
