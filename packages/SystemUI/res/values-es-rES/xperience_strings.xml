@@ -14,6 +14,29 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Power Menu -->
+    <string name="">Avanzado</string>
+    <string name="">Modo Recovery</string>
+    <string name="">Bootloader</string>
+    <string name="">Interfaz de Usuario</string>
+
+    <!-- Title of statusbar tuner -->
+    <string name=""/>
+
+    <!-- Name of the VPN status bar icon. -->
+    <string name=""/>
+
+    <!-- Name of the roaming status bar icon. -->
+    <string name=""/>
+
+     <!-- Name of the data saver status bar icon. -->
+     <string name=""/>
+
+    <!-- Name of the location status bar icon. -->
+    <string name=""/>
+
+    <!-- Name of the microphone status bar icon. -->
+    <string name=""/>
 </resources>
