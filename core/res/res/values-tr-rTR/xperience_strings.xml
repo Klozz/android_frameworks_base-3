@@ -25,4 +25,5 @@
     <string name="reboot_message">Sistem yeniden başlatılıyor</string>
     <!-- Alert slider proc nodes paths. -->
     <!-- Cycle through ringer modes -->
+    <string name="volume_dialog_ringer_guidance_normal">Çağrılar ve bildirimler için zil sesi</string>
 </resources>
