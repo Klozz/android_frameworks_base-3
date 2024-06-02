@@ -18,16 +18,37 @@
     <!-- Power Menu -->
     <!-- Caffeine QS Tile -->
     <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Màn hình xem nhanh</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Màn hình xem nhanh tắt.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Màn hình xem nhanh bật.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">Màn hình xem nhanh đã tắt.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">Màn hình xem nhanh đã bật.</string>
     <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">Chia sẻ kết nối qua USB</string>
     <!-- Volte icon tuner -->
     <!-- SystemUI Tuner -->
+    <string name="statusbar_items_title">Biểu tượng thanh trạng thái</string>
+    <string name="lockscreen_default">Mặc định</string>
+    <string name="lockscreen_hidden">Trống</string>
     <!-- Shows when people have clicked on the custom lockscreen shortcut [CHAR LIMIT=60] -->
+    <string name="custom_hint">Vuốt từ biểu tượng để mở</string>
     <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
     <!-- Indication on the keyguard that is shown when the device is charging with a Turbo charger. Should match keyguard_plugged_in_chargeturbo [CHAR LIMIT=40]-->
     <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Thông báo nổi</string>
+    <string name="accessibility_quick_settings_heads_up_off">Tắt thông báo nổi.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Bật thông báo nổi.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Thông báo nổi đã tắt.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Thông báo nổi đã bật.</string>
     <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
     <!-- Screen record -->
     <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <string name="screenrecord_delete_label">Xoá</string>
     <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">Đã xóa ghi màn hình</string>
+    <string name="screenrecord_stopdot_label">Hiện nút dừng\nNhấn giữ để di chuyển nó</string>
+    <string name="screenrecord_lowquality_label">Chất lượng quay thấp để cho dung lượng file nhỏ hơn</string>
+    <string name="screenrecord_longer_timeout_switch_label">Giới hạn kích thước tệp lớn\nKích thước bản ghi giới hạn ở 15 GB</string>
     <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Đang nhận diện khuôn mặt...</string>
 </resources>
