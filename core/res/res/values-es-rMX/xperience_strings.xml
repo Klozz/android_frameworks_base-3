@@ -24,4 +24,5 @@
     <string name="charging_control_notification_content_target">La batería estará completamente cargada en %1$s</string>
     <string name="charging_control_notification_content_target_reached">La batería está cargada</string>
     <!-- App lock -->
+    <string name="unlock_application">Desbloquear <xliff:g id="label" example="Telegram">%1$s</xliff:g></string>
 </resources>
