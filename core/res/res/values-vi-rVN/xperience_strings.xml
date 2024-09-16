@@ -16,6 +16,7 @@
 -->
 <resources>
     <!-- Face unlock -->
+    <string name="face_unlock_disabled_idle">Mở khóa bằng khuôn mặt bị tắt do không hoạt động</string>
     <!-- Whether to cancel fingerprint operation if not idle -->
     <!-- Global actions -->
 </resources>
