@@ -19,13 +19,24 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Custom QS tiles -->
     <!-- Caffeine QS tile -->
+    <string name="accessibility_quick_settings_caffeine_off">Đã tắt Cafein.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Đã bật Cafein.</string>
     <!-- Power Menu -->
     <!-- DC Dimming -->
+    <string name="quick_settings_dc_dimming_label">DC - Làm mờ</string>
     <!-- Screenshot delete action -->
     <!-- Label for UI element which allows deleting the screenshot [CHAR LIMIT=30] -->
+    <string name="screenshot_delete_label">Xoá</string>
     <!-- Content description indicating that tapping the element will allow deleting the screenshot [CHAR LIMIT=NONE] -->
+    <string name="screenshot_delete_description">Xóa ảnh chụp màn hình</string>
     <!-- Title of statusbar tuner -->
+    <string name="status_bar_icons">Biểu tượng thanh trạng thái</string>
     <!-- Name of the VoLTE/VoWiFi icon. -->
     <!-- Name of the roaming status bar icon. -->
+    <string name="status_bar_roaming">Chỉ báo chuyển vùng</string>
     <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Sạc ngược không dây</string>
+    <string name="quick_settings_powershare_off_powersave_label">Tắt Chia Sẻ Pin\nTiết kiệm pin</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Sạc không dây tắt\nPin quá yếu</string>
+    <string name="quick_settings_powershare_enabled_label">Chia Sẻ Pin được bật</string>
 </resources>
