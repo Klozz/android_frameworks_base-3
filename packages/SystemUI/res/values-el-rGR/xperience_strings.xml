@@ -32,4 +32,5 @@
     <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
     <!-- Screenrecord QS tile -->
     <!-- DC Dimming -->
+    <string name="quick_settings_dc_full_auto">Αυτόματη λειτουργία</string>
 </resources>
