@@ -27,9 +27,11 @@
     <!-- Title of statusbar tuner -->
     <!-- Name of the roaming status bar icon. -->
     <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_enabled_label">Αντίστροφη ασύρματη φόρτιση είναι ενεργοποιημένη</string>
     <!-- Data usage info in QS footer -->
     <!-- Bluetooth dialog -->
     <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Αναγνώριση προσώπου...</string>
     <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
     <!-- Indication on the keyguard that is shown when the device is charging with a warp charger. Should match keyguard_plugged_in_warp_charging [CHAR LIMIT=40]-->
     <!-- Indication on the keyguard that is shown when the device is charging with a VOOC charger. Should match keyguard_plugged_in_vooc_charging [CHAR LIMIT=40]-->
