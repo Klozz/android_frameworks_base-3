@@ -16,7 +16,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Global actions -->
+    <string name="reboot_to_bootloader_title">Újraindítás: Bootloader</string>
+    <string name="reboot_to_bootloader_message">Újraindítás Bootloader módba\u2026</string>
+    <string name="reboot_to_recovery_title">Újraindítás: Recovery</string>
+    <string name="reboot_to_recovery_message">Újraindítás Recovery módba\u2026</string>
+    <string name="reboot_to_fastboot_title">Fastboot újraindítás</string>
+    <string name="reboot_to_fastboot_message">Fastboot-módba repülünk\u2026</string>
+    <string name="reboot_system_title">Rendszerújraindítás</string>
+    <string name="reboot_system_message">Rendszer-újraindítás\u2026</string>
     <!-- Alert slider proc nodes paths. -->
     <!-- Pocket Lock -->
+    <string name="pocket_lock_message_long_press">Tartsa lenyomva a bekapcsoló gombot a feloldáshoz</string>
     <!-- Pocket Lock -->
+    <string name="pocket_view_title">A Zsebmód bekapcsolva</string>
+    <string name="pocket_view_title_cancel">A telefon használatához:</string>
+    <string name="pocket_view_top_tag_cancel">Ellenőrizze, hogy a kék területen nincs-e valami, és távolítsa el a piszkot és a port.</string>
+    <string name="pocket_view_top_tag_cancel2">A Bekapcsológomb hosszan nyomása azonnal kikapcsolja a Zsebmódot</string>
 </resources>
