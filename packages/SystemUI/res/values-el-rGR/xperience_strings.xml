@@ -28,4 +28,5 @@
     <!-- Name of the VoLTE/VoWiFi icon. -->
     <!-- Name of the roaming status bar icon. -->
     <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_enabled_label">Αντίστροφη ασύρματη φόρτιση είναι ενεργοποιημένη</string>
 </resources>
