@@ -16,5 +16,6 @@
 -->
 <resources>
     <!-- Face unlock -->
+    <string name="face_unlock_disabled_idle">Η αναγνώριση προσώπου απενεργοποιήθηκε λόγω αδράνειας</string>
     <!-- Whether to cancel fingerprint operation if not idle -->
 </resources>
