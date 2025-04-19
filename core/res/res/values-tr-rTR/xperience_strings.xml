@@ -28,6 +28,10 @@
     <!-- Pocket Lock -->
     <string name="pocket_lock_message_long_press">Kilidi açmak için güç tuşuna basılı tutun</string>
     <string name="pocket_view_title">Cep modu açık</string>
+    <string name="pocket_view_title_cancel">Telefonunuzu etkinleştirmek için:</string>
+    <string name="pocket_view_top_tag_cancel">Telefonunuzun mavi alanında herhangi bir engel olup olmadığını kontrol edin ve herhangi bir kir veya toz varsa temizleyin.</string>
     <string name="pocket_view_top_tag_cancel2">Cep modundan çıkmak için güç tuşuna basılı tutun.</string>
     <!-- Pocket mode -->
+    <string name="pocket_mode_active">Cep modu aktif</string>
+    <string name="pocket_mode_hint">Cep modunu devre dışı bırakmak için herhangi bir yere uzun basın.\nVeya kırmızı kısmı kapatan herhangi bir şeyi kaldırın.</string>
 </resources>

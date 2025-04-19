@@ -28,6 +28,10 @@
     <!-- Pocket Lock -->
     <string name="pocket_lock_message_long_press">Tartsa lenyomva a bekapcsoló gombot a feloldáshoz</string>
     <string name="pocket_view_title">A Zsebmód bekapcsolva</string>
+    <string name="pocket_view_title_cancel">Telefonja használatához:</string>
+    <string name="pocket_view_top_tag_cancel">Kérjük, ne takarja le a kék területet, tartsa tisztán, por és koszmentesen.</string>
     <string name="pocket_view_top_tag_cancel2">A Bekapcsológomb hosszan nyomása azonnal kikapcsolja a Zsebmódot</string>
     <!-- Pocket mode -->
+    <string name="pocket_mode_active">Zsebmód aktív</string>
+    <string name="pocket_mode_hint">Nyomja hosszan bárhol a zsebmód kikapcsolásához.\nVagy ha bármi van az érzékelőn távolítsa azt el.</string>
 </resources>
