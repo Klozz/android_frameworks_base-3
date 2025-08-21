@@ -16,6 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Αναγνώριση προσώπου...</string>
     <!-- Power Menu -->
     <!-- Title of statusbar tuner -->
     <!-- Custom QS tiles -->
@@ -31,4 +32,5 @@
     <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
     <!-- Screenrecord QS tile -->
     <!-- DC Dimming -->
+    <string name="quick_settings_dc_full_auto">Αυτόματη λειτουργία</string>
 </resources>

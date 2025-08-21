@@ -16,19 +16,59 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">Arcfelismerés...</string>
     <!-- Power Menu -->
+    <string name="global_action_reboot">Újraindítás</string>
+    <string name="global_action_reboot_more">Újraindítás\u2026</string>
+    <string name="global_action_reboot_sub">Rendszer</string>
+    <string name="global_action_reboot_recovery">Recovery-be</string>
+    <string name="global_action_reboot_bootloader">Bootloader-be</string>
+    <string name="global_action_reboot_fastboot">Fastboot</string>
+    <string name="global_action_settings">Beállítások</string>
     <!-- Title of statusbar tuner -->
+    <string name="status_bar_icons">Állapotsori ikonok</string>
     <!-- Custom QS tiles -->
     <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">Akkumegosztás</string>
+    <string name="quick_settings_powershare_off_powersave_label">Akkumegosztás ki\nAkkumulátorkímélő mód</string>
+    <string name="quick_settings_powershare_off_low_battery_label">Akkumegosztás ki\nAlacsony akkuszint</string>
+    <string name="quick_settings_powershare_enabled_label">Az Akkumegosztás engedélyezett</string>
     <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Koffein</string>
+    <string name="accessibility_quick_settings_caffeine_off">Koffein ki</string>
+    <string name="accessibility_quick_settings_caffeine_on">Koffein mód be</string>
     <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">Környezeti kijelző</string>
+    <string name="accessibility_quick_settings_ambient_display_off">Környezeti kijelző ki.</string>
+    <string name="accessibility_quick_settings_ambient_display_on">Környezeti kijelző be.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">A Környezeti kijelző kikapcsolva.</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">A Környezeti kijelző bekapcsolva.</string>
     <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB-megosztás</string>
     <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">Lebegő értesítések</string>
+    <string name="accessibility_quick_settings_heads_up_off">Lebegő értesítések ki.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Lebegő értesítések be.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">A Lebegő értesítések kikapcsolva.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">A Lebegő értesítések bekapcsolva.</string>
     <!-- Data usage info in QS footer -->
+    <string name="usage_data">ma felhasználva</string>
+    <string name="usage_data_default_suffix">Mobiladat</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
     <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">Intelligens pixelek</string>
+    <string name="quick_settings_smart_pixels_on_power_save">Az \'Intelligens pixelek\' automatikus engedélyezése</string>
     <!-- Screen record delete action -->
     <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <string name="screenrecord_delete_label">Törlés</string>
     <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">A képernyővideó törölve</string>
     <!-- Screenrecord QS tile -->
+    <string name="screenrecord_stopdot_label">Látható megállítógomb\nHosszan nyomva áthelyezhető</string>
+    <string name="screenrecord_lowquality_label">Gyengébb minőség, hogy kisebbek legyenek a fájlok</string>
+    <string name="screenrecord_longer_timeout_switch_label">A fájlméret felső határa\n15GB lehet a legnagyobb méret</string>
     <!-- DC Dimming -->
+    <string name="quick_settings_dc_dimming_label">DC-kiegyenlítés</string>
+    <string name="quick_settings_dc_brightness_mode">Fényerő-mód</string>
+    <string name="quick_settings_dc_full_auto">Automatikus mód</string>
 </resources>

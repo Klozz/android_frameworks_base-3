@@ -16,19 +16,59 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Face Unlock -->
+    <string name="face_unlock_recognizing">臉部辨識中</string>
     <!-- Power Menu -->
+    <string name="global_action_reboot"></string>
+    <string name="global_action_reboot_more">重新啟動\u2026</string>
+    <string name="global_action_reboot_sub">系統</string>
+    <string name="global_action_reboot_recovery">恢復模式</string>
+    <string name="global_action_reboot_bootloader">Bootloader 模式</string>
+    <string name="global_action_reboot_fastboot">Fastboot</string>
+    <string name="global_action_settings">設定</string>
     <!-- Title of statusbar tuner -->
+    <string name="status_bar_icons">狀態欄圖示</string>
     <!-- Custom QS tiles -->
     <!-- PowerShare QS tile -->
+    <string name="quick_settings_powershare_label">電力分享</string>
+    <string name="quick_settings_powershare_off_powersave_label">電力分享關閉\n省電模式</string>
+    <string name="quick_settings_powershare_off_low_battery_label">電力分享關閉\n電池電量過低</string>
+    <string name="quick_settings_powershare_enabled_label">電力分享已開啟</string>
     <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">暫停休眠</string>
+    <string name="accessibility_quick_settings_caffeine_off">關閉暫停休眠</string>
+    <string name="accessibility_quick_settings_caffeine_on">開啟暫停休眠</string>
     <!-- Ambient display QS tile -->
+    <string name="quick_settings_ambient_display_label">微光螢幕</string>
+    <string name="accessibility_quick_settings_ambient_display_off">微光螢幕關閉。</string>
+    <string name="accessibility_quick_settings_ambient_display_on">微光螢幕開啟。</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_off">環境顯示已關閉。</string>
+    <string name="accessibility_quick_settings_ambient_display_changed_on">環境顯示已開啟。</string>
     <!-- USB tethering QS tile -->
+    <string name="quick_settings_usb_tether_label">USB 網路分享</string>
     <!-- Heads up QS tile -->
+    <string name="quick_settings_heads_up_label">浮動通知</string>
+    <string name="accessibility_quick_settings_heads_up_off">浮動通知關閉。</string>
+    <string name="accessibility_quick_settings_heads_up_on">開啟浮動通知。</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">浮動通知已關閉。</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">浮動通知已開啟。</string>
     <!-- Data usage info in QS footer -->
+    <string name="usage_data">今日已用</string>
+    <string name="usage_data_default_suffix">網路</string>
+    <string name="usage_wifi_default_suffix">Wi-Fi</string>
     <!-- Smart Pixels QS Tile -->
+    <string name="quick_settings_smart_pixels">智慧 Pixels</string>
+    <string name="quick_settings_smart_pixels_on_power_save">自動啟用智慧 Pixels</string>
     <!-- Screen record delete action -->
     <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <string name="screenrecord_delete_label">刪除</string>
     <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">螢幕錄影已刪除</string>
     <!-- Screenrecord QS tile -->
+    <string name="screenrecord_stopdot_label">顯示停止按鈕\n長按移動</string>
+    <string name="screenrecord_lowquality_label">降低畫質以減少檔案大小</string>
+    <string name="screenrecord_longer_timeout_switch_label">增加檔案大小限制\n將錄製大小限制為在15 GB</string>
     <!-- DC Dimming -->
+    <string name="quick_settings_dc_dimming_label">DC調光</string>
+    <string name="quick_settings_dc_brightness_mode">亮度模式</string>
+    <string name="quick_settings_dc_full_auto">自動模式</string>
 </resources>
